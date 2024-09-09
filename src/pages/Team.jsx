@@ -6,21 +6,25 @@ import { useMediaQuery } from 'react-responsive'
 import Frai from '../images/farai2.jpg'
 import Dereck from '../images/dereck.png'
 import Bless from '../images/blissful.jpg'
-import Kenny from '../images/kenny.jpg'
+import Kenny from '../images/mynza.jpg'
 import Boudoun from '../images/nkru.jpg'
 import Tinashe from '../images/nzdwe.jpg'
 import Musoni from '../images/musni.jpg'
 import Manzi from '../images/manzi.jpg'
+import Anotinda from '../images/anotind.jpg'
+import Willy from '../images/willmun.jpg'
 
 const teamMembers = [
   { name: 'Farai Mangwanda', role: 'Principal Consultant', image: Frai },
   { name: 'Dereck Charimba', role: 'Senior Consultant', image: Dereck },
   { name: 'Blessfull Dzimiri', role: 'Business Consultant', image: Bless },
-  { name: 'Kenny Munyaneza', role: 'Technical Consultant', image: Kenny },
+  { name: 'Kenny Munyaneza Roger', role: 'Technical Consultant', image: Kenny },
   { name: 'Boudoun Nkurunza', role: 'Technical Consultant', image: Boudoun },
   { name: 'Tinashe Nedziwe', role: 'Senior Consultant', image: Tinashe },
   { name: 'Felicien Musoni', role: 'Technical Consultant', image: Musoni },
   { name: 'Frank Manzi', role: 'Technical Consultant', image: Manzi },
+  { name: 'Anotinda Mangwanda', role: 'Technical Consultant', image: Anotinda },
+  { name: 'Munezero Hirwa Willy Christel', role: 'Technical Consultant', image: Willy },
 ]
 
 const TeamSection = () => {
@@ -39,14 +43,14 @@ const TeamSection = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     vertical: true,
-    // verticalSwiping: true,
+    verticalSwiping: true,
   }
 
   const horizontalSettings = {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: isTablet ? 3 : 4, // 3 slides on tablets, 4 on larger screens
+    slidesToShow: isTablet ? 3 : 4, 
     slidesToScroll: 2,
     arrows: true,
     autoplay: true,

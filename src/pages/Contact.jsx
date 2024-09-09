@@ -7,7 +7,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="px-4 sm:px-8 lg:px-16  bg-gray-100 relative z-10"
+      className="px-4 sm:px-8 lg:px-16  bg-gray-100 relative z-10 mt-9"
     >
       <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl lg:text-5xl text-center mb-8">
         Contact Us
