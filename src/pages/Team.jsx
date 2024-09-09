@@ -39,7 +39,7 @@ const TeamSection = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     vertical: true,
-    verticalSwiping: true,
+    // verticalSwiping: true,
   }
 
   const horizontalSettings = {
@@ -56,14 +56,11 @@ const TeamSection = () => {
   const settings = isMobile ? verticalSettings : horizontalSettings
 
   return (
-    <section
-      id="team"
-      className="mt-16 px-4 mx-auto mb-10 max-w-6xl scroll-animate"
-    >
+    <section id="team" className="mt-16 px-4 mx-auto max-w-6xl scroll-animate">
       <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl md:text-5xl lg:text-4xl text-center mb-8">
         Meet Our Team
       </h1>
-      <div className="relative h-[500px] sm:h-[600px]">
+      <div className="relative  h-[400px] sm:h-[400px]">
         <Slider {...settings} className="w-full">
           {teamMembers.map((member, index) => (
             <div
@@ -82,14 +79,6 @@ const TeamSection = () => {
                 <p className="text-slate-800 text-base font-medium text-center mb-4">
                   {member.role}
                 </p>
-                {/* <div className="text-center">
-                  <button
-                    className="bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300 hover:bg-blue-800"
-                    aria-label={`View details for ${member.name}`}
-                  >
-                    View Profile
-                  </button>
-                </div> */}
               </div>
             </div>
           ))}

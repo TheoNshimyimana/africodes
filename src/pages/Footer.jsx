@@ -5,7 +5,9 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
+import { IoIosCall } from 'react-icons/io'
+import { IoLocationOutline } from 'react-icons/io5'
+import { MdEmail, MdOutlineMail } from 'react-icons/md'
 
 function Footer() {
   return (
@@ -57,7 +59,9 @@ function Footer() {
 
         {/* Useful Links */}
         <div className="flex-1 ml-5 mb-8 lg:mb-0">
-          <h2 className="text-lg font-bold mb-4 text-custom-blue">Useful Links</h2>
+          <h2 className="text-lg font-bold mb-4 text-custom-blue">
+            Useful Links
+          </h2>
           <ul className="space-y-2 text-slate-900">
             <li>
               <a href="#home" className="hover:underline">
@@ -89,7 +93,9 @@ function Footer() {
 
         {/* Our Services */}
         <div className="flex-1 mb-8 lg:mb-0">
-          <h2 className="text-lg font-bold mb-4 text-custom-blue">Our Services</h2>
+          <h2 className="text-lg font-bold mb-4 text-custom-blue">
+            Our Services
+          </h2>
           <ul className="space-y-2 text-slate-900">
             <li>
               <a href="#consulting" className="hover:underline">
@@ -116,22 +122,30 @@ function Footer() {
 
         {/* Contact */}
         <div className="flex-1">
-          <h2 className="text-lg mb-4 text-custom-blue font-bold">Contact Us</h2>
+          <h2 className="text-lg mb-4 text-custom-blue font-bold">
+            Contact Us
+          </h2>
           <ul className="space-y-2 text-slate-900">
             <li className="flex items-center">
-              <MdEmail className="text-blue-400 mr-2" />
+              <span className="text-blue-400 mr-2">
+              <MdOutlineMail className="text-lg text-blue-500 mx-auto" />
+              </span>
               <a href="mailto:example@gmail.com" className="hover:underline">
                 example@gmail.com
               </a>
             </li>
             <li className="flex items-center">
-              <span className="text-blue-400 mr-2">📞</span>
+              <span className="text-blue-400 mr-2">
+                <IoIosCall className="text-lg text-blue-500 mx-auto" />
+              </span>
               <a href="tel:+1234567890" className="hover:underline">
                 +1 (234) 567-890
               </a>
             </li>
             <li className="flex items-center">
-              <span className="text-blue-400 mr-2">📍</span>
+              <span className="text-blue-400 mr-2">
+                <IoLocationOutline className="text-lg text-blue-500 mx-auto" />
+              </span>
               <span>Kigali, Kicukiro</span>
             </li>
           </ul>

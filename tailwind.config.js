@@ -10,9 +10,10 @@ export default {
         'custom-orange': '#F5269F',
         'custom-purple': '#B50EDF',
         'custom-red': '#EC434B',
-        'custom-yellow': '#F68C09',
-        'custom-green': '#08DA4E',
+        'custom-yellow': '#F79F23',
+        'custom-green': '#21C2F0',
         'custom-light-blue': '#5C9EAD',
+        'custom-black': '#24272A',
       },
       keyframes: {
         'zoom-in-up': {

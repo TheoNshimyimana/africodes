@@ -14,7 +14,7 @@ function Contact() {
       </h1>
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
         {/* Contact Info */}
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="flex-1 grid  grid-cols-1 sm:grid-cols-2 gap-10">
           <div className="text-center p-4 bg-white shadow-md rounded-lg">
             <IoLocationOutline className="text-5xl text-blue-600 mx-auto" />
             <h2 className="text-blue-500 text-xl font-semibold mt-3">
