@@ -7,6 +7,7 @@ import VideoGallery from './pages/VideoGallery'
 import Services from './pages/Services'
 import Body from './pages/Body'
 import Navbar from './Navbar'
+import TrainingLinks from './pages/TrainingLinks'
 
 
 function Layout() {
@@ -31,7 +32,8 @@ function Layout() {
 
         <Contact />
         {/* Footer */}
-        <VideoGallery />
+        {/* <VideoGallery /> */}
+        {/* <TrainingLinks /> */}
         <Footer />
       </>
     )

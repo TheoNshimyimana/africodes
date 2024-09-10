@@ -1,13 +1,10 @@
-import Logo from '../images/Logo.png' 
+import LogoFooter from '../images/LogoFooter.png'
 import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
 } from 'react-icons/fa'
-import { IoIosCall } from 'react-icons/io'
-import { IoLocationOutline } from 'react-icons/io5'
-import { MdEmail, MdOutlineMail } from 'react-icons/md'
 
 function Footer() {
   return (
@@ -15,7 +12,7 @@ function Footer() {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-8">
         {/* Logo and Description (Larger Width) */}
         <div className="flex flex-col lg:w-2/5 mb-8 lg:mb-0">
-          <img src={Logo} alt="Company Logo" className="w-full mb-4" />
+          <img src={LogoFooter} alt="Company Logo" className="w-full mb-4" />
           <p className="text-slate-900 mb-4">
             Africode Consultancy Ltd provides top-notch solutions for businesses
             to thrive in the digital age. Our expert team offers tailored
@@ -79,6 +76,11 @@ function Footer() {
               </a>
             </li>
             <li>
+              <a href="#products" className="hover:underline">
+                Products
+              </a>
+            </li>
+            <li>
               <a href="#team" className="hover:underline">
                 Our Team
               </a>
@@ -96,25 +98,40 @@ function Footer() {
           <h2 className="text-lg font-bold mb-4 text-custom-blue">
             Our Services
           </h2>
-          <ul className="space-y-2 text-slate-900">
+          <ul className="space-y-2 text-slate-900 list-disc">
             <li>
-              <a href="#consulting" className="hover:underline">
-                Consulting
+              <a href="" className="hover:underline">
+                T24 Integration
               </a>
             </li>
             <li>
-              <a href="#strategy" className="hover:underline">
-                Strategy
+              <a href="" className="hover:underline">
+                T24 implementations and Upgrades
               </a>
             </li>
             <li>
-              <a href="#implementation" className="hover:underline">
-                Implementation
+              <a href="" className="hover:underline">
+                Project Management
               </a>
             </li>
             <li>
-              <a href="#support" className="hover:underline">
-                Support
+              <a href="" className="hover:underline">
+                Software Development
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:underline">
+                Data Mining
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:underline">
+                Business Continuity Management Consulting.
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:underline">
+                Advisory services and Capacity Building.
               </a>
             </li>
           </ul>
@@ -123,30 +140,28 @@ function Footer() {
         {/* Contact */}
         <div className="flex-1">
           <h2 className="text-lg mb-4 text-custom-blue font-bold">
-            Contact Us
+            Our Products
           </h2>
-          <ul className="space-y-2 text-slate-900">
-            <li className="flex items-center">
-              <span className="text-blue-400 mr-2">
-              <MdOutlineMail className="text-lg text-blue-500 mx-auto" />
-              </span>
-              <a href="mailto:example@gmail.com" className="hover:underline">
-                example@gmail.com
+          <ul className="space-y-2 text-slate-900 list-disc">
+            <li>
+              <a href="" className="hover:underline">
+                Afronet
               </a>
             </li>
-            <li className="flex items-center">
-              <span className="text-blue-400 mr-2">
-                <IoIosCall className="text-lg text-blue-500 mx-auto" />
-              </span>
-              <a href="tel:+1234567890" className="hover:underline">
-                +1 (234) 567-890
+            <li>
+              <a href="" className="hover:underline">
+                E-statements solution
               </a>
             </li>
-            <li className="flex items-center">
-              <span className="text-blue-400 mr-2">
-                <IoLocationOutline className="text-lg text-blue-500 mx-auto" />
-              </span>
-              <span>Kigali, Kicukiro</span>
+            <li>
+              <a href="" className="hover:underline">
+                Dormant Accounts Management
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:underline">
+                Direct daily T24 transactions and contracts streaming
+              </a>
             </li>
           </ul>
         </div>

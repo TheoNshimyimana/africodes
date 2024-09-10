@@ -17,7 +17,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'team', 'contact']
+      const sections = ['home', 'about', 'services','products', 'team', 'contact']
       let currentSection = ''
 
       sections.forEach((section) => {
@@ -105,6 +105,16 @@ function Navbar() {
             <ul>
               <li
                 className={`${
+                  activeSection === 'products' ? 'text-blue-700 font-bold' : ''
+                }`}
+                onClick={() => scrollToSection('products')}
+              >
+                Products
+              </li>
+            </ul>
+            <ul>
+              <li
+                className={`${
                   activeSection === 'team' ? 'text-blue-700 font-bold' : ''
                 }`}
                 onClick={() => scrollToSection('team')}
@@ -126,7 +136,7 @@ function Navbar() {
 
           <button
             onClick={toggleAppointmentModal}
-            className="bg-blue-500 text-white font-semibold text-lg rounded-md p-3 transition-transform duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+            className="bg-blue-500 text-white font-semibold text-lg rounded-md px-2 py-1 transition-transform duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
           >
             Get Started
           </button>
@@ -185,6 +195,17 @@ function Navbar() {
               </li>
               <li
                 className={`${
+                  activeSection === 'products' ? 'text-blue-700 font-bold' : ''
+                }`}
+                onClick={() => {
+                  scrollToSection('product')
+                  toggleMobileMenu()
+                }}
+              >
+                Products
+              </li>
+              <li
+                className={`${
                   activeSection === 'team' ? 'text-blue-700 font-bold' : ''
                 }`}
                 onClick={() => {
@@ -227,10 +248,10 @@ function Navbar() {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-2 right-4 text-slate-700 px-3 py-1 text-xl  hover:text-gray-800"
+              className="absolute top-2 right-4 text-slate-700 px-3 py-1 text-4xl  hover:text-gray-800"
               onClick={toggleAppointmentModal}
             >
-              X
+              ×
             </button>
             <GetAppointment />
           </div>

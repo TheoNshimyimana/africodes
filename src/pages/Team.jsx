@@ -7,24 +7,69 @@ import Frai from '../images/farai2.jpg'
 import Dereck from '../images/dereck.png'
 import Bless from '../images/blissful.jpg'
 import Kenny from '../images/mynza.jpg'
-import Boudoun from '../images/nkru.jpg'
 import Tinashe from '../images/nzdwe.jpg'
-import Musoni from '../images/musni.jpg'
 import Manzi from '../images/manzi.jpg'
 import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
 
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from 'react-icons/fa'
+
 const teamMembers = [
-  { name: 'Farai Mangwanda', role: 'Principal Consultant', image: Frai },
-  { name: 'Dereck Charimba', role: 'Senior Consultant', image: Dereck },
-  { name: 'Blessfull Dzimiri', role: 'Business Consultant', image: Bless },
-  { name: 'Kenny Munyaneza Roger', role: 'Technical Consultant', image: Kenny },
-  { name: 'Boudoun Nkurunza', role: 'Technical Consultant', image: Boudoun },
-  { name: 'Tinashe Nedziwe', role: 'Senior Consultant', image: Tinashe },
-  { name: 'Felicien Musoni', role: 'Technical Consultant', image: Musoni },
-  { name: 'Frank Manzi', role: 'Technical Consultant', image: Manzi },
-  { name: 'Anotinda Mangwanda', role: 'Technical Consultant', image: Anotinda },
-  { name: 'Munezero Hirwa Willy Christel', role: 'Technical Consultant', image: Willy },
+  {
+    name: 'Farai Mangwanda',
+    role: 'Principal Consultant',
+    image: Frai,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  {
+    name: 'Dereck Charimba',
+    role: 'Senior Consultant',
+    image: Dereck,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  {
+    name: 'Blessfull Dzimiri',
+    role: 'Business Consultant',
+    image: Bless,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  {
+    name: 'Kenny Munyaneza Roger',
+    role: 'Technical Consultant',
+    image: Kenny,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  
+  {
+    name: 'Tinashe Nedziwe',
+    role: 'Senior Consultant',
+    image: Tinashe,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  
+  {
+    name: 'Frank Manzi',
+    role: 'Technical Consultant',
+    image: Manzi,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  {
+    name: 'Anotinda Mangwanda',
+    role: 'Technical Consultant',
+    image: Anotinda,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  {
+    name: 'Munezero Hirwa Willy Christel',
+    role: 'Technical Consultant',
+    image: Willy,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
 ]
 
 const TeamSection = () => {
@@ -50,9 +95,9 @@ const TeamSection = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: isTablet ? 3 : 4, 
+    slidesToShow: isTablet ? 3 : 4,
     slidesToScroll: 2,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
   }
@@ -60,29 +105,73 @@ const TeamSection = () => {
   const settings = isMobile ? verticalSettings : horizontalSettings
 
   return (
-    <section id="team" className="mt-16 px-4 mx-auto max-w-6xl scroll-animate">
-      <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl md:text-5xl lg:text-4xl text-center mb-8">
+    <section id="team" className="mb-14 px-4 mx-auto max-w-6xl mt-5 scroll-animate">
+      <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl md:text-5xl lg:text-4xl text-center mt-10 mb-8">
         Meet Our Team
       </h1>
-      <div className="relative  h-[400px] sm:h-[400px]">
+      <div className="relative h-[400px] sm:h-[400px]">
         <Slider {...settings} className="w-full">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="p-4 flex justify-center items-center h-full"
             >
-              <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center ">
+              <div className="relative bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center min-h-[400px] group transition-transform duration-300 ease-in-out transform hover:scale-105">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-56 object-cover rounded-lg mb-4"
+                  className="w-full h-56 object-cover rounded-t-lg mb-4"
                 />
-                <h2 className="font-bold text-blue-700 text-xl sm:text-2xl md:text-2xl text-center mb-2">
-                  {member.name}
-                </h2>
-                <p className="text-slate-800 text-base font-medium text-center mb-4">
-                  {member.role}
-                </p>
+                <div className="absolute bottom-44 right-0 flex flex-col space-y-5 bg-black p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {member.social.facebook && (
+                    <a
+                      href={member.social.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      <FaFacebookF />
+                    </a>
+                  )}
+                  {member.social.twitter && (
+                    <a
+                      href={member.social.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-600"
+                    >
+                      <FaTwitter />
+                    </a>
+                  )}
+                  {member.social.linkedin && (
+                    <a
+                      href={member.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 hover:text-blue-900"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  )}
+                  {member.social.instagram && (
+                    <a
+                      href={member.social.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-500 hover:text-pink-700"
+                    >
+                      <FaInstagram />
+                    </a>
+                  )}
+                </div>
+                <div className="p-4 text-center flex-1">
+                  <h2 className="font-bold text-blue-700 text-sm sm:text-lg md:text-lg mb-2">
+                    {member.name}
+                  </h2>
+                  <p className="text-slate-800 text-base font-medium mb-4">
+                    {member.role}
+                  </p>
+                </div>
               </div>
             </div>
           ))}

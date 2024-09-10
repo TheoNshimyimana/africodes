@@ -1,9 +1,18 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
+import VideoGallery from './pages/VideoGallery'
 
 function App() {
+  ;<Layout />
   return (
-    <Layout />
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="/traings" element={<VideoGallery />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 

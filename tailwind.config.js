@@ -14,6 +14,7 @@ export default {
         'custom-green': '#21C2F0',
         'custom-light-blue': '#5C9EAD',
         'custom-black': '#24272A',
+        'custom-indigo': '#FBF0F1',
       },
       keyframes: {
         'zoom-in-up': {

@@ -68,15 +68,19 @@ const VideoGallery = () => {
   }
 
   return (
-    <section className="px-4 py-10 max-w-7xl mx-auto">
-      <h1 className="text-3xl lg:text-4xl font-bold text-center text-custom-blue mb-8">
+    <section className="relative px-4 py-10 max-w-7xl h-screen w-screen mx-auto bg-custom-gray">
+      {/* Overlay for better text visibility */}
+      <div className="absolute inset-0 bg-black bg-opacity-25"></div>
+
+      <h1 className="relative text-3xl lg:text-4xl font-bold text-center text-custom-blue mb-8 z-10">
         T24 Video Training
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {videoLinks.map((video, index) => (
           <div
             key={video.id}
-            className="relative cursor-pointer"
+            className="relative cursor-pointer group"
             onClick={() => handleClick(index)}
           >
             <img
@@ -84,7 +88,7 @@ const VideoGallery = () => {
               alt={video.title}
               className="w-full h-48 object-cover rounded-lg"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <BsFillPlayCircleFill className="text-white text-4xl" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 text-white text-center">
