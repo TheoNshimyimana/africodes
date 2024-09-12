@@ -11,7 +11,7 @@ import Tinashe from '../images/nzdwe.jpg'
 import Manzi from '../images/manzi.jpg'
 import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
-import Edgar2 from '../images/edgar.jpg'
+// import Edgar2 from '../images/edgar.jpg'
 
 import {
   FaFacebookF,
@@ -80,12 +80,12 @@ const teamMembers = [
     image: Anotinda,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
-  {
-    name: 'Edgar Tibeihaho',
-    role: 'Business Management',
-    image: Edgar2,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
-  },
+  // {
+  //   name: 'Edgar Tibeihaho',
+  //   role: 'Business Management',
+  //   image: Edgar2,
+  //   social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  // },
   {
     name: 'Munezero Hirwa Willy Christel',
     role: 'Technical Consultant',
