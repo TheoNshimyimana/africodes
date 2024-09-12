@@ -135,11 +135,11 @@ const TeamSection = () => {
   const settings = isMobile ? verticalSettings : horizontalSettings
 
   return (
-    <section id="team" className="mb-14 px-4   pt-5 scroll-animate bg-slate-100">
+    <section id="team" className="pb-16 px-4   pt-5 scroll-animate bg-slate-100">
       <h1 className="font-semibold text-custom-blue text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>
-      <div className="relative h-[400px] sm:h-[400px]">
+      <div className="relative h-[900px] sm:h-[400px]">
         <Slider {...settings} className="w-full">
           {teamMembers.map((member, index) => (
             <div
@@ -150,7 +150,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-56 object-cover rounded-t-lg "
+                  className="w-full h-80 object-cover rounded-t-lg "
                 />
                 <div className="absolute bottom-44 right-0 flex flex-col space-y-5 bg-black p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {member.social.facebook && (

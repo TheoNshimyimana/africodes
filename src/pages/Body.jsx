@@ -13,10 +13,10 @@ function Body() {
       {/* Home Section */}
       <main
         id="home"
-        className="flex  flex-col md:flex-row justify-between items-center md:space-y-0 md:space-x-4 pt-2 pl-6 py-0 z-0 scroll-animate bg-slate-100"
+        className="flex  flex-col md:flex-row justify-between  md:space-y-0 md:space-x-4 pt-2 pl-6 py-0 z-0 scroll-animate bg-slate-100"
       >
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="font-semibold text-blue-700 text-2xl md:text-3xl lg:text-4xl">
+        <div className="flex-1 mt-12  md:text-left">
+          <h1 className="text-slate-600 text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
           <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg">
