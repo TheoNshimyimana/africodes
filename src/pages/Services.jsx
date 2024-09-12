@@ -14,15 +14,28 @@ import {
 } from 'react-icons/fa'
 import { AiOutlineApi, AiOutlineSafety } from 'react-icons/ai'
 import { MdSettings, MdBusinessCenter } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 function Services() {
   return (
-    <section id='services' className="bg-custom-indigo">
+    <section id="services" className="bg-custom-indigo">
       {/* T24 Consultancy Section */}
-      <main  className="mx-9 scroll-animate pt-4 mb-12 ">
-        <h1  className="font-bold text-custom-blue text-4xl text-center mb-10">
+      <main className="mx-9 scroll-animate pt-4 mb-12 ">
+        <h1 className="font-bold text-custom-blue text-4xl text-center mb-10">
           Our Core Services
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 gap-10">
+          {/* T24 Training */}
+          <div className="shadow p-5 bg-white rounded-lg hover:shadow-xl transition-shadow">
+            <Link to={'/trainings'}>
+              <div className="text-center flex flex-col items-center">
+                <FaChalkboardTeacher className="text-5xl text-custom-green mb-5" />
+                <h1 className="text-custom-blue text-lg font-bold mt-2">
+                  T24 Training
+                </h1>
+              </div>
+            </Link>
+          </div>
+
           {/* CBS Implementation */}
           <div className="shadow p-5 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
@@ -49,16 +62,6 @@ function Services() {
               <FaProjectDiagram className="text-4xl text-custom-green mb-5" />
               <h1 className="text-custom-blue text-xl font-bold mt-2">
                 Project Management
-              </h1>
-            </div>
-          </div>
-
-          {/* T24 Training */}
-          <div className="shadow p-5 bg-white rounded-lg hover:shadow-xl transition-shadow">
-            <div className="text-center flex flex-col items-center">
-              <FaChalkboardTeacher className="text-5xl text-custom-green mb-5" />
-              <h1 className="text-custom-blue text-lg font-bold mt-2">
-                T24 Training
               </h1>
             </div>
           </div>

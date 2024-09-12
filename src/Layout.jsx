@@ -7,6 +7,7 @@ import Footer from './pages/Footer'
 import Services from './pages/Services'
 import Body from './pages/Body'
 import Navbar from './Navbar'
+// import VideoGallery from './pages/VideoGallery'
 // import TrainingLinks from './pages/TrainingLinks'
 
 
