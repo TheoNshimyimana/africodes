@@ -11,7 +11,7 @@ import Tinashe from '../images/nzdwe.jpg'
 import Manzi from '../images/manzi.jpg'
 import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
-import Edgar2 from '../images/edgar2.jpg'
+import Edgar2 from '../images/edgar.jpg'
 
 import {
   FaFacebookF,
