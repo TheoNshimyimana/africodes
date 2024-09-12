@@ -56,9 +56,9 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="px-4 sm:px-8 lg:px-4 bg-gray-100 relative z-10 mt-9"
+      className="px-4 sm:px-8 lg:px-4 bg-gray-100 relative z-10 "
     >
-      <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl lg:text-5xl text-center mb-8">
+      <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl lg:text-5xl text-center mt-6 mb-8">
         Contact Us
       </h1>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-4">

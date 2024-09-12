@@ -3,11 +3,11 @@ import Customers from './pages/Customers'
 import TeamSection from './pages/Team'
 import Contact from './pages/Contact'
 import Footer from './pages/Footer'
-import VideoGallery from './pages/VideoGallery'
+// import VideoGallery from './pages/VideoGallery'
 import Services from './pages/Services'
 import Body from './pages/Body'
 import Navbar from './Navbar'
-import TrainingLinks from './pages/TrainingLinks'
+// import TrainingLinks from './pages/TrainingLinks'
 
 
 function Layout() {

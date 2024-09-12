@@ -1,4 +1,4 @@
-import LogoFooter from '../images/LogoFooter.png'
+import Logo from '../images/Logo.png'
 import {
   FaFacebookF,
   FaTwitter,
@@ -8,22 +8,26 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-slate-200 text-white py-12 px-4">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-8">
-        {/* Logo and Description (Larger Width) */}
-        <div className="flex flex-col lg:w-2/5 mb-8 lg:mb-0">
-          <img src={LogoFooter} alt="Company Logo" className="w-full mb-4" />
-          <p className="text-slate-900 mb-4">
+    <footer className="bg-slate-200 text-slate-900 py-10 md:py-12 px-4 md:px-8 ">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 my-10">
+        {/* Logo and Description */}
+        <div className="lg:w-2/5 flex flex-col items-center lg:items-start mb-10 lg:mb-0">
+          <img
+            src={Logo}
+            alt="Company Logo"
+            className="w-32 md:w-48 mb-4"
+          />
+          <p className="text-center lg:text-left mb-4">
             Africode Consultancy Ltd provides top-notch solutions for businesses
             to thrive in the digital age. Our expert team offers tailored
             strategies and support to meet your needs and drive growth.
           </p>
-          <div className="flex space-x-4 mt-4">
+          <div className="flex space-x-4 justify-center lg:justify-start">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-custom-blue hover:text-white"
+              className="text-custom-blue hover:text-slate-900"
             >
               <FaFacebookF />
             </a>
@@ -31,7 +35,7 @@ function Footer() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-custom-blue hover:text-white"
+              className="text-custom-blue hover:text-slate-900"
             >
               <FaTwitter />
             </a>
@@ -39,7 +43,7 @@ function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-custom-blue hover:text-white"
+              className="text-custom-blue hover:text-slate-900"
             >
               <FaLinkedinIn />
             </a>
@@ -47,7 +51,7 @@ function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-custom-blue hover:text-white"
+              className="text-custom-blue hover:text-slate-900"
             >
               <FaInstagram />
             </a>
@@ -55,11 +59,11 @@ function Footer() {
         </div>
 
         {/* Useful Links */}
-        <div className="flex-1 ml-5 mb-8 lg:mb-0">
+        <div className="flex-1 mb-10 lg:mb-0">
           <h2 className="text-lg font-bold mb-4 text-custom-blue">
             Useful Links
           </h2>
-          <ul className="space-y-2 text-slate-900">
+          <ul className="space-y-2">
             <li>
               <a href="#home" className="hover:underline">
                 Home
@@ -94,11 +98,11 @@ function Footer() {
         </div>
 
         {/* Our Services */}
-        <div className="flex-1 mb-8 lg:mb-0">
+        <div className="flex-1 mb-10 lg:mb-0">
           <h2 className="text-lg font-bold mb-4 text-custom-blue">
             Our Services
           </h2>
-          <ul className="space-y-2 text-slate-900 list-disc">
+          <ul className="space-y-2 list-disc pl-5">
             <li>
               <a href="" className="hover:underline">
                 T24 Integration
@@ -106,7 +110,7 @@ function Footer() {
             </li>
             <li>
               <a href="" className="hover:underline">
-                T24 implementations and Upgrades
+                T24 Implementations and Upgrades
               </a>
             </li>
             <li>
@@ -126,23 +130,23 @@ function Footer() {
             </li>
             <li>
               <a href="" className="hover:underline">
-                Business Continuity Management Consulting.
+                Business Continuity Management Consulting
               </a>
             </li>
             <li>
               <a href="" className="hover:underline">
-                Advisory services and Capacity Building.
+                Advisory Services and Capacity Building
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Contact */}
-        <div className="flex-1">
-          <h2 className="text-lg mb-4 text-custom-blue font-bold">
+        {/* Our Products */}
+        <div className="flex-1 mb-10 lg:mb-0">
+          <h2 className="text-lg font-bold mb-4 text-custom-blue">
             Our Products
           </h2>
-          <ul className="space-y-2 text-slate-900 list-disc">
+          <ul className="space-y-2 list-disc pl-5">
             <li>
               <a href="" className="hover:underline">
                 Afronet
@@ -150,7 +154,7 @@ function Footer() {
             </li>
             <li>
               <a href="" className="hover:underline">
-                E-statements solution
+                E-Statements Solution
               </a>
             </li>
             <li>
@@ -160,13 +164,14 @@ function Footer() {
             </li>
             <li>
               <a href="" className="hover:underline">
-                Direct daily T24 transactions and contracts streaming
+                Direct Daily T24 Transactions and Contracts Streaming
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="mt-8  pt-4 text-center text-slate-900">
+
+      <div className="mt-6 md:mt-8 pt-4 text-center text-slate-900">
         &copy; {new Date().getFullYear()} Africode Consultancy Ltd. All rights
         reserved.
       </div>

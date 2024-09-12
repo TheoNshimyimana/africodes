@@ -16,10 +16,10 @@ import { AiOutlineApi, AiOutlineSafety } from 'react-icons/ai'
 import { MdSettings, MdBusinessCenter } from 'react-icons/md'
 function Services() {
   return (
-    <section className="bg-custom-indigo">
+    <section id='services' className="bg-custom-indigo">
       {/* T24 Consultancy Section */}
-      <main id="services" className="mx-9 scroll-animate mt-6 mb-20 ">
-        <h1 className="font-bold text-custom-blue text-4xl text-center mb-10">
+      <main  className="mx-9 scroll-animate pt-4 mb-12 ">
+        <h1  className="font-bold text-custom-blue text-4xl text-center mb-10">
           Our Core Services
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 gap-10">
@@ -106,7 +106,7 @@ function Services() {
       </main>
 
       {/* Products */}
-      <main className="mx-9" id="products">
+      <main className="mx-9 pb-9" id="products">
         <h1 className="font-bold text-custom-blue text-4xl text-center mb-10">
           Our products
         </h1>

@@ -1,6 +1,4 @@
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -15,6 +13,12 @@ import Stanbank from '../assets/stanbank.png'
 import Ba from '../assets/ba.jpg'
 import Trop from '../assets/trop.png'
 
+import Nerma from '../assets/Nerma.jpeg'
+import E_solution from '../assets/E-solution.jpeg'
+import Ckg from '../assets/Ckg.jpg'
+import Usi from '../assets/Usi.jpeg'
+import Degree from '../assets/45-Degres.jpeg'
+
 const Customers = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
   const isTablet = useMediaQuery({
@@ -22,43 +26,92 @@ const Customers = () => {
   })
   const isLaptop = useMediaQuery({ query: '(min-width: 1025px)' })
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: isMobile ? 1 : isTablet ? 2 : isLaptop ? 4 : 3,
-    slidesToScroll: isMobile ? 1 : isTablet ? 2 : isLaptop ? 4 : 3,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  }
-
   return (
     <section className="mx-4 md:mx-9 bg-slate-300 mt-8 pt-8 pb-10 scroll-animate">
-      <h1 className="font-bold text-custom-blue text-4xl text-center mb-10">
+      <h1 className="font-bold text-custom-blue text-4xl mt-10 text-center mb-10">
         Our Customers
       </h1>
-      <div className="relative">
-        <Slider {...settings} className="mt-10">
-          <img src={Brd} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img src={Bpr} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img src={Kcb} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img src={Ncb} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img src={Nmb} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img
-            src={Tropical}
-            alt="Customer Logo"
-            className="max-w-[80%] mx-auto"
-          />
-          <img src={Sbm} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img
-            src={Stanbank}
-            alt="Customer Logo"
-            className="max-w-[80%] mx-auto"
-          />
-          <img src={Ba} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-          <img src={Trop} alt="Customer Logo" className="max-w-[80%] mx-auto" />
-        </Slider>
+      <div className="flex-wrap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-4 gap-6">
+        <img
+          src={Brd}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Bpr}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Kcb}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Ncb}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Nmb}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Tropical}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Sbm}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Stanbank}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Ba}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Trop}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+      </div>
+      <h1 className="font-bold text-custom-blue text-4xl mt-10 text-center mb-10">
+        Our Partners
+      </h1>
+      <div className="flex-wrap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-4 gap-6">
+        <img
+          src={Degree}
+          alt="Partner Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Nerma}
+          alt="Partner Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={E_solution}
+          alt="Partner Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Ckg}
+          alt="Partner Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Usi}
+          alt="Partner Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
       </div>
     </section>
   )
