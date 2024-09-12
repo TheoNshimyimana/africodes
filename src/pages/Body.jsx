@@ -1,5 +1,4 @@
 import banner from '../images/banner.jpg'
-// import { GoArrowRight } from 'react-icons/go'
 
 function Body() {
   const scrollToServices = () => {
@@ -25,7 +24,7 @@ function Body() {
             consultancy, advisory services, capacity building, and training. We
             simplify enterprise technology and offer high-quality services at
             affordable prices. Our approach is centered on understanding and
-            meeting our clients' specific business needs, guided by strong
+            meeting our client's specific business needs, guided by strong
             business principles and a commitment to quality. We focus on
             integrating human capital development with our business culture to
             provide tailored solutions. Our experienced management and technical
