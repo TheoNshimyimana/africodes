@@ -105,7 +105,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed top-0 right-0 bg-white w-3/4 h-full z-40 shadow-lg md:hidden flex flex-col items-center pt-16">
+          <div className="fixed top-0 right-0 bg-white w-1/2 h-2/3 z-40 shadow-lg md:hidden flex flex-col items-center ">
             <button
               className="self-end text-2xl p-4"
               onClick={toggleMobileMenu}

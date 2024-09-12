@@ -11,6 +11,7 @@ import Tinashe from '../images/nzdwe.jpg'
 import Manzi from '../images/manzi.jpg'
 import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
+import Edgar2 from '../images/edgar2.jpg'
 
 import {
   FaFacebookF,
@@ -24,19 +25,34 @@ const teamMembers = [
     name: 'Farai Mangwanda',
     role: 'Principal Consultant',
     image: Frai,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: 'https://twitter.com/fmangwanda',
+      linkedin: '#',
+      instagram: '#',
+    },
   },
   {
     name: 'Dereck Charimba',
     role: 'Senior Consultant',
     image: Dereck,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: 'https://twitter.com/derecktcharimb1',
+      linkedin: '#',
+      instagram: '#',
+    },
   },
   {
     name: 'Blessfull Dzimiri',
     role: 'Business Consultant',
     image: Bless,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: 'https://twitter.com/BlissfulDzimiri',
+      linkedin: '#',
+      instagram: '#',
+    },
   },
   {
     name: 'Kenny Munyaneza Roger',
@@ -44,14 +60,14 @@ const teamMembers = [
     image: Kenny,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
-  
+
   {
     name: 'Tinashe Nedziwe',
     role: 'Senior Consultant',
     image: Tinashe,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
-  
+
   {
     name: 'Frank Manzi',
     role: 'Technical Consultant',
@@ -62,6 +78,12 @@ const teamMembers = [
     name: 'Anotinda Mangwanda',
     role: 'Technical Consultant',
     image: Anotinda,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
+  {
+    name: 'Edgar Tibeihaho',
+    role: 'Business Management',
+    image: Edgar2,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
   {

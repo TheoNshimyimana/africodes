@@ -1,3 +1,4 @@
+import React from 'react'
 import Logo from '../images/Logo.png'
 import {
   FaFacebookF,
@@ -7,20 +8,24 @@ import {
 } from 'react-icons/fa'
 
 function Footer() {
+  const handleScroll = (e, id) => {
+    e.preventDefault()
+    const target = document.querySelector(id)
+    target?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+
   return (
     <footer className="bg-slate-200 text-slate-900 py-10 md:py-12 px-4 md:px-8 ">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 my-10">
         {/* Logo and Description */}
         <div className="lg:w-2/5 flex flex-col items-center lg:items-start mb-10 lg:mb-0">
-          <img
-            src={Logo}
-            alt="Company Logo"
-            className="w-32 md:w-48 mb-4"
-          />
+          <img src={Logo} alt="Company Logo" className="w-32 md:w-48 mb-4" />
           <p className="text-center lg:text-left mb-4">
             Africode Consultancy Ltd provides top-notch solutions for businesses
-            to thrive in the digital age. Our expert team offers tailored
-            strategies and support to meet your needs and drive growth.
+            to thrive in the digital age.
           </p>
           <div className="flex space-x-4 justify-center lg:justify-start">
             <a
@@ -65,32 +70,56 @@ function Footer() {
           </h2>
           <ul className="space-y-2">
             <li>
-              <a href="#home" className="hover:underline">
+              <a
+                href="#home"
+                onClick={(e) => handleScroll(e, '#home')}
+                className="hover:underline"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:underline">
+              <a
+                href="#about"
+                onClick={(e) => handleScroll(e, '#about')}
+                className="hover:underline"
+              >
                 About Us
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#products" className="hover:underline">
+              <a
+                href="#products"
+                onClick={(e) => handleScroll(e, '#products')}
+                className="hover:underline"
+              >
                 Products
               </a>
             </li>
             <li>
-              <a href="#team" className="hover:underline">
+              <a
+                href="#team"
+                onClick={(e) => handleScroll(e, '#team')}
+                className="hover:underline"
+              >
                 Our Team
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
+              <a
+                href="#contact"
+                onClick={(e) => handleScroll(e, '#contact')}
+                className="hover:underline"
+              >
                 Contact
               </a>
             </li>
@@ -104,37 +133,65 @@ function Footer() {
           </h2>
           <ul className="space-y-2 list-disc pl-5">
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 T24 Integration
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 T24 Implementations and Upgrades
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 Project Management
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 Software Development
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 Data Mining
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 Business Continuity Management Consulting
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#services"
+                onClick={(e) => handleScroll(e, '#services')}
+                className="hover:underline"
+              >
                 Advisory Services and Capacity Building
               </a>
             </li>
@@ -148,22 +205,38 @@ function Footer() {
           </h2>
           <ul className="space-y-2 list-disc pl-5">
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#products"
+                onClick={(e) => handleScroll(e, '#products')}
+                className="hover:underline"
+              >
                 Afronet
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#products"
+                onClick={(e) => handleScroll(e, '#products')}
+                className="hover:underline"
+              >
                 E-Statements Solution
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#products"
+                onClick={(e) => handleScroll(e, '#products')}
+                className="hover:underline"
+              >
                 Dormant Accounts Management
               </a>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <a
+                href="#products"
+                onClick={(e) => handleScroll(e, '#products')}
+                className="hover:underline"
+              >
                 Direct Daily T24 Transactions and Contracts Streaming
               </a>
             </li>
