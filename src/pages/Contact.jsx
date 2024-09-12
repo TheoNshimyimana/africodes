@@ -99,7 +99,7 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="flex-1 bg-slate-100 shadow-md rounded-lg p-6 lg:ml-2">
+        <div className="flex-1 bg-slate-100 shadow-md rounded-lg pb-4 lg:ml-2">
           <form
             ref={formRef}
             className="flex flex-col gap-5"
