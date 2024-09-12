@@ -12,6 +12,7 @@ import Manzi from '../images/manzi.jpg'
 import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
 import Edgar from '../images/hard.jpg'
+import Innocent from '../images/innocent.jpg'
 
 
 import {
@@ -93,6 +94,12 @@ const teamMembers = [
     image: Willy,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
+  {
+    name: 'Innocent Ndahiriwe',
+    role: 'Technical Consultant',
+    image: Innocent,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
 ]
 
 const TeamSection = () => {
@@ -128,9 +135,9 @@ const TeamSection = () => {
   const settings = isMobile ? verticalSettings : horizontalSettings
 
   return (
-    <section id="team" className="mb-14 px-4 mx-auto max-w-6xl mt-5 scroll-animate">
-      <h1 className="font-bold text-custom-blue text-3xl sm:text-4xl md:text-5xl lg:text-4xl text-center mt-10 mb-8">
-        Meet Our Team
+    <section id="team" className="mb-14 px-4   pt-5 scroll-animate bg-slate-100">
+      <h1 className="font-semibold text-custom-blue text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
+        Our Team
       </h1>
       <div className="relative h-[400px] sm:h-[400px]">
         <Slider {...settings} className="w-full">
@@ -143,7 +150,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-56 object-cover rounded-t-lg mb-4"
+                  className="w-full h-56 object-cover rounded-t-lg "
                 />
                 <div className="absolute bottom-44 right-0 flex flex-col space-y-5 bg-black p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {member.social.facebook && (
@@ -187,7 +194,7 @@ const TeamSection = () => {
                     </a>
                   )}
                 </div>
-                <div className="p-4 text-center flex-1">
+                <div className=" w-full text-center flex-1 pt-4 bg-slate-100 ">
                   <h2 className="font-bold text-blue-700 text-sm sm:text-lg md:text-lg mb-2">
                     {member.name}
                   </h2>

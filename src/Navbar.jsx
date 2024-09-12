@@ -88,9 +88,9 @@ function Navbar() {
           </div>
           <button
             onClick={toggleAppointmentModal}
-            className="bg-blue-500 text-white font-semibold text-lg rounded-md px-2 py-1 transition-transform duration-300 hover:bg-blue-600"
+            className="bg-blue-500 text-white font-semibold text-md rounded-md px-2 py-1 transition-transform duration-300 hover:bg-blue-600"
           >
-            Get Started
+            Get Appointment
           </button>
         </div>
 
@@ -105,7 +105,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed top-0 right-0 bg-white w-1/2 h-2/3 z-40 shadow-lg md:hidden flex flex-col items-center ">
+          <div className="fixed top-0 right-0 bg-white w-1/2 h-1/2 z-40 shadow-lg md:hidden flex flex-col items-center ">
             <button
               className="self-end text-2xl p-4"
               onClick={toggleMobileMenu}
@@ -129,9 +129,9 @@ function Navbar() {
             </ul>
             <button
               onClick={toggleAppointmentModal}
-              className="bg-blue-500 font-semibold text-lg rounded-md p-2 text-white mt-8"
+              className="bg-blue-500 font-semibold text-md rounded-md p-2 text-white mt-8"
             >
-              Get Started
+              Get Appointment
             </button>
           </div>
         )}

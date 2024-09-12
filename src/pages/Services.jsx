@@ -17,10 +17,10 @@ import { MdSettings, MdBusinessCenter } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 function Services() {
   return (
-    <section id="services" className="bg-custom-indigo">
+    <section id="services" className="bg-slate-100  pt-10 ">
       {/* T24 Consultancy Section */}
-      <main className="mx-9 scroll-animate pt-4 mb-12 ">
-        <h1 className="font-bold text-custom-blue text-4xl text-center mb-10">
+      <main className=" scroll-animate pt-4  ">
+        <h1 className="font-semibold text-custom-blue text-3xl text-center mb-10">
           Our Core Services
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 gap-10">
@@ -109,8 +109,8 @@ function Services() {
       </main>
 
       {/* Products */}
-      <main className="mx-9 pb-9" id="products">
-        <h1 className="font-bold text-custom-blue text-4xl text-center mb-10">
+      <main className="mx-9 py-12  pb-9" id="products">
+        <h1 className="font-semibold text-custom-blue text-3xl text-center mb-10">
           Our products
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4 gap-8">
