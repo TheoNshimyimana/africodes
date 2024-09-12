@@ -15,7 +15,7 @@ function Body() {
         id="home"
         className="flex  flex-col md:flex-row justify-between  md:space-y-0 md:space-x-4 pt-2 pl-6 py-0 z-0 scroll-animate bg-slate-100"
       >
-        <div className="flex-1 mt-12  md:text-left">
+        <div className="flex-1 mt-12 pl-10  md:text-left">
           <h1 className="text-slate-600 text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
@@ -44,7 +44,7 @@ function Body() {
           <img
             src={banner}
             alt="Banner image"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-[500px] rounded-lg shadow-md"
           />
         </div>
       </main>
@@ -61,7 +61,7 @@ function Body() {
                 <h2 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
                   Our Mission
                 </h2>
-                <p className="leading-relaxed text-base md:text-lg">
+                <p className="leading-relaxed text-sm md:text-base">
                   To empower people and businesses through excellently tailored
                   solutions.
                 </p>
@@ -73,7 +73,7 @@ function Body() {
                 <h2 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
                   Our Vision
                 </h2>
-                <p className="leading-relaxed text-base md:text-lg">
+                <p className="leading-relaxed text-sm md:text-base">
                   To be the preferred ICT consultancy company of choice in the
                   banking and financial services industry.
                 </p>
