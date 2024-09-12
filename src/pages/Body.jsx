@@ -56,6 +56,34 @@ function Body() {
           About Us
         </h1>
         <main className="flex flex-col md:flex-row gap-8 md:gap-12">
+          <div className="flex-1 flex flex-col md:flex-row gap-6 md:gap-8">
+            <div className="flex-1 bg-custom-green text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
+              <div>
+                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
+                  Our Mission
+                </h2>
+                <p className="leading-relaxed text-base md:text-lg">
+                  To empower people and businesses through excellently tailored
+                  solutions.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex-1 bg-custom-yellow text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
+              <div>
+                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
+                  Our Vision
+                </h2>
+                <p className="leading-relaxed text-base md:text-lg">
+                  To be the preferred ICT consultancy company of choice in the
+                  banking and financial services industry.
+                </p>
+              </div>
+            </div>
+
+            {/* Values Card */}
+          </div>
+
           {/* Mission Card */}
           <div className="flex-1 bg-custom-black text-white p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
             <div>
@@ -69,7 +97,7 @@ function Body() {
               </p>
               <p className=" text-sm md:text-lg mb-4">
                 <strong className="font-bold">
-                  Customer Service Excellence : 
+                  Customer Service Excellence :
                 </strong>
                 We are committed to satisfying customer needs and honoring the
                 commitments we make to them.
@@ -90,35 +118,6 @@ function Body() {
                 <strong className="font-bold">Reliability: </strong> We deliver
                 as per our promise.
               </p>
-            </div>
-          </div>
-
-          {/* Vision and Values Container */}
-          <div className="flex-1 flex flex-col md:flex-row gap-6 md:gap-8">
-            {/* Vision Card */}
-            <div className="flex-1 bg-custom-yellow text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <div>
-                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
-                  Our Vision
-                </h2>
-                <p className="leading-relaxed text-base md:text-lg">
-                  To be the preferred ICT consultancy company of choice in the
-                  banking and financial services industry.
-                </p>
-              </div>
-            </div>
-
-            {/* Values Card */}
-            <div className="flex-1 bg-custom-green text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <div>
-                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
-                  Our Values
-                </h2>
-                <p className="leading-relaxed text-base md:text-lg">
-                  To empower people and businesses through excellently tailored
-                  solutions.
-                </p>
-              </div>
             </div>
           </div>
         </main>
