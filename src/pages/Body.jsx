@@ -13,9 +13,9 @@ function Body() {
       {/* Home Section */}
       <main
         id="home"
-        className="flex flex-col md:flex-row justify-between  md:space-y-0 md:space-x-4 pt-2 pl-6 gap-5 py-0 z-0 scroll-animate bg-slate-100"
+        className="flex flex-col md:flex-row justify-between   md:space-y-0 md:space-x-4 pt-2 pl-6 gap-5 py-0 z-0 scroll-animate bg-slate-100"
       >
-        <div className="flex-1 mt-12 py-10  md:text-left">
+        <div className="flex-1 py-10 sm:mt-0  lg:mt-12 md:text-left">
           <h1 className="text-slate-600 text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
@@ -51,7 +51,7 @@ function Body() {
 
       {/* About Section */}
       <section id="about" className=" pt-12 px-4 md:px-8 bg-slate-100">
-        <h1 className="font-semibold  text-custom-blue text-center text-xl md:text-2xl lg:text-3xl mb-10">
+        <h1 className="font-bold  text-custom-blue text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
         <main className="flex flex-col md:flex-row gap-8 md:gap-12">
