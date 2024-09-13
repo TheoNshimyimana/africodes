@@ -139,7 +139,7 @@ const TeamSection = () => {
       <h1 className="font-semibold text-custom-blue text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>
-      <div className="relative h-[900px] sm:h-[400px]">
+      <div className="relative h-[400px] sm:h-[400px]">
         <Slider {...settings} className="w-full">
           {teamMembers.map((member, index) => (
             <div

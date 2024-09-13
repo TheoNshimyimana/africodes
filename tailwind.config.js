@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -15,6 +14,9 @@ export default {
         'custom-light-blue': '#5C9EAD',
         'custom-black': '#24272A',
         'custom-indigo': '#FBF0F1',
+      },
+      fontFamily: {
+        'open-sans': ['Open Sans', 'sans-serif'],
       },
       keyframes: {
         'zoom-in-up': {

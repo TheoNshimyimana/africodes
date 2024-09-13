@@ -13,9 +13,9 @@ function Body() {
       {/* Home Section */}
       <main
         id="home"
-        className="flex  flex-col md:flex-row justify-between  md:space-y-0 md:space-x-4 pt-2 pl-6 gap-5 py-0 z-0 scroll-animate bg-slate-100"
+        className="flex flex-col md:flex-row justify-between  md:space-y-0 md:space-x-4 pt-2 pl-6 gap-5 py-0 z-0 scroll-animate bg-slate-100"
       >
-        <div className="flex-1 mt-12 pl-10  md:text-left">
+        <div className="flex-1 mt-12 py-10  md:text-left">
           <h1 className="text-slate-600 text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
@@ -89,7 +89,7 @@ function Body() {
               <h2 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
                 Our Values
               </h2>
-              <p className=" text-sm md:text-md mb-4">
+              <p className=" text-sm md:text-md mb-4 font-op">
                 <strong className="font-bold">Accountability: </strong>
                 We accept responsibility for our actions and make business
                 decisions based on experience and good judgment.

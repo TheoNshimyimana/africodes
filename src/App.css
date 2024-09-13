@@ -1,17 +1,15 @@
 #root {
-  /* max-width: 1600px; */
   margin: 0 auto;
   padding: 5px;
-  background-color: #F1F5F9;
-}
-
-html {
-  scroll-behavior: smooth;
+  
 }
 
 
 
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: #F1F5F9;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
+

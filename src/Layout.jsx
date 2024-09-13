@@ -13,7 +13,7 @@ import Navbar from './Navbar'
 
 function Layout() {
     return (
-      <>
+      <div className='font-open-sans'>
       <Navbar />
         {/* Body */}
 
@@ -36,7 +36,7 @@ function Layout() {
         {/* <VideoGallery /> */}
         {/* <TrainingLinks /> */}
         <Footer />
-      </>
+      </div>
     )
 }
 

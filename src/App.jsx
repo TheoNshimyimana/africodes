@@ -3,9 +3,9 @@ import Layout from './Layout'
 import VideoGallery from './pages/VideoGallery'
 
 function App() {
-  ;<Layout />
+  <Layout />
   return (
-    <>
+    < >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />} />

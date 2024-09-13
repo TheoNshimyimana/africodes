@@ -17,7 +17,7 @@ function Footer() {
   }
 
   return (
-    <footer className="bg-slate-200 text-slate-900 py-10 md:py-12 px-4 md:px-8 ">
+    <footer className="bg-slate-200 text-slate-900 py-10 md:py-8 px-4 md:px-8 ">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 my-10">
         {/* Logo and Description */}
         <div className="lg:w-2/5 flex flex-col items-center lg:items-start mb-10 lg:mb-0">

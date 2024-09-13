@@ -23,7 +23,7 @@ function Services() {
         <h1 className="font-semibold text-custom-blue text-3xl text-center mb-10">
           Our Core Services
         </h1>
-        <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 gap-10">
+        <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 pb-10 px-5 gap-8">
           {/* T24 Training */}
           <div className="shadow p-5 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <Link to={'/trainings'}>
@@ -109,13 +109,13 @@ function Services() {
       </main>
 
       {/* Products */}
-      <main className="mx-9 py-12  pb-9" id="products">
+      <main className="px-6 py-3  " id="products">
         <h1 className="font-semibold text-custom-blue text-3xl text-center mb-10">
           Our products
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4 gap-8">
           {/* Service Card 1 - Afronet */}
-          <div className="relative shadow py-10 rounded-md px-6 bg-white pb-12">
+          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaNetworkWired className="text-3xl text-custom-light-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300">
@@ -125,7 +125,7 @@ function Services() {
           </div>
 
           {/* Service Card 2 - Direct daily T24 transactions */}
-          <div className="relative shadow py-10 rounded-md px-6 bg-white pb-12">
+          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaStream className="text-3xl text-custom-light-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300">
@@ -135,7 +135,7 @@ function Services() {
           </div>
 
           {/* Service Card 3 - E-statements solution */}
-          <div className="relative shadow py-10 rounded-md px-6 bg-white pb-12">
+          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaFileInvoice className="text-3xl text-custom-light-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300">
@@ -145,7 +145,7 @@ function Services() {
           </div>
 
           {/* Service Card 4 - Dormant Accounts Management */}
-          <div className="relative shadow py-10 rounded-md px-6 bg-white pb-12">
+          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaUserClock className="text-3xl text-custom-light-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300">

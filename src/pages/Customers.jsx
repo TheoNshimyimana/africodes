@@ -98,15 +98,16 @@ const Customers = () => {
           className="w-44 h-24 object-cover mx-auto"
         />
         <img
-          src={E_solution}
-          alt="Partner Logo"
-          className="w-44 h-24 object-cover mx-auto"
-        />
-        <img
           src={Ckg}
           alt="Partner Logo"
           className="w-44 h-24 object-cover mx-auto"
         />
+        <img
+          src={E_solution}
+          alt="Partner Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+
         <img
           src={Usi}
           alt="Partner Logo"
