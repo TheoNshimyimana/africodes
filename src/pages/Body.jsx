@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import banner from '../images/banner.jpg'
 import GetAppointment from './GetAppointment'
+import Bg from '../assets/bg.jpg'
 
 
 function Body() {
@@ -25,7 +26,10 @@ function Body() {
 
   return (
     <div id="home">
-      <section className="bg-bg-image w-full h-1/2 sm:h-screen flex items-center justify-center">
+      <section
+        style={{ backgroundImage: `url(${Bg})` }}
+        className=" w-full h-1/2 sm:h-screen flex items-center justify-center"
+      >
         <div className="text-center px-4 sm:px-6 lg:px-8">
           {/* Title with responsive text size */}
           <div className="flex flex-col sm:flex-row justify-center text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-shadow">
@@ -62,7 +66,7 @@ function Body() {
               >
                 ×
               </button>
-              <GetAppointment /> 
+              <GetAppointment />
             </div>
           </div>
         )}
