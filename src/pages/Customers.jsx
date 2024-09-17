@@ -28,7 +28,7 @@ const Customers = () => {
 
   return (
     <section className="  bg-slate-100  pt-4 pb-10 scroll-animate">
-      <h1 className="font-bold text-custom-blue text-3xl mt-10 text-center mb-10">
+      <h1 className="font-semibold text-custom-yellow text-3xl mt-10 text-center mb-10">
         Our Customers
       </h1>
       <div className="flex-wrap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-4 gap-6">
@@ -83,7 +83,7 @@ const Customers = () => {
           className="w-44 h-24 object-cover mx-auto"
         />
       </div>
-      <h1 className="font-bold text-custom-blue text-3xl mt-10 text-center pt-10 mb-10">
+      <h1 className="font-semibold text-custom-yellow text-3xl mt-10 text-center pt-10 mb-10">
         Our Partners
       </h1>
       <div className="flex-wrap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-4 gap-6">

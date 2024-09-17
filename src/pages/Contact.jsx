@@ -58,14 +58,14 @@ function Contact() {
       id="contact"
       className="px-4 sm:px-8 lg:px-4 bg-slate-100 relative pt-10 z-10 "
     >
-      <h1 className="font-bold text-custom-blue text-3xl sm:text-base lg:text-3xl text-center mt-6 mb-8">
+      <h1 className="font-semibold text-custom-yellow text-3xl sm:text-base lg:text-3xl text-center mt-6 mb-8">
         Contact Us
       </h1>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-4">
         {/* Contact Info */}
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div className="text-center p-4 shadow-md rounded-lg bg-slate-100">
-            <IoLocationOutline className="text-5xl text-blue-600 mx-auto" />
+            <IoLocationOutline className="text-5xl text-custom-yellow mx-auto" />
             <h2 className="text-blue-500 text-xl font-semibold mt-3">
               Address
             </h2>
@@ -74,23 +74,23 @@ function Contact() {
             </p>
           </div>
           <div className="text-center p-4 bg-slate-100 shadow-md rounded-lg">
-            <TbClockHour4 className="text-5xl text-blue-600 mx-auto" />
-            <h2 className="text-blue-500 text-xl font-semibold mt-3">
+            <TbClockHour4 className="text-5xl text-custom-yellow mx-auto" />
+            <h2 className="text-custom-blue text-xl font-semibold mt-3">
               Opening Hours
             </h2>
             <p className="text-gray-600"> Mon - Fri: 08:00 - 16:00</p>
             <p className="text-gray-600"> Sat - Sun: 09:00 - 14:00</p>
           </div>
           <div className="text-center p-4 bg-slate-100 shadow-md rounded-lg">
-            <IoIosCall className="text-5xl text-blue-600 mx-auto" />
-            <h2 className="text-blue-500 text-xl font-semibold mt-3">
+            <IoIosCall className="text-5xl text-custom-yellow mx-auto" />
+            <h2 className="text-custom-blue text-xl font-semibold mt-3">
               Call Us
             </h2>
             <p className="text-gray-600">Mobile RW: +250 781 467 638</p>
             <p className="text-gray-600">Mobile RW: +250 789 176 953</p>
           </div>
           <div className="text-center p-4 bg-slate-100 shadow-md rounded-lg">
-            <MdOutlineMail className="text-5xl text-blue-600 mx-auto" />
+            <MdOutlineMail className="text-5xl text-custom-yellow mx-auto" />
             <h2 className="text-blue-500 text-xl font-semibold mt-3">
               Email Us
             </h2>
@@ -137,7 +137,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`bg-blue-700 font-semibold w-1/2 text-lg rounded-md p-1 mt-4 text-white hover:bg-blue-800 transition duration-300 ${
+                className={`bg-custom-yellow font-semibold w-1/2 text-lg rounded-md p-1 mt-4 text-white hover:bg-yellow-600 transition duration-300 ${
                   loading ? 'cursor-not-allowed' : ''
                 }`}
               >

@@ -1,6 +1,19 @@
+import { useState } from 'react'
 import banner from '../images/banner.jpg'
+import GetAppointment from './GetAppointment'
+
 
 function Body() {
+
+
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false)
+
+
+
+  const toggleAppointmentModal = () =>
+    setShowAppointmentModal(!showAppointmentModal)
+
+
   const scrollToServices = () => {
     const element = document.getElementById('services')
     if (element) {
@@ -8,18 +21,60 @@ function Body() {
     }
   }
 
+
+
   return (
-    <>
+    <div id="home">
+      <section className="bg-bg-image w-full h-1/2 sm:h-screen flex items-center justify-center">
+        <div className="text-center px-4 sm:px-6 lg:px-8">
+          {/* Title with responsive text size */}
+          <div className="flex flex-col sm:flex-row justify-center text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-shadow">
+            <span className="text-custom-blue">AFRICODE</span>
+            <span className="text-custom-yellow mx-0 sm:mx-2">CONSULTANCY</span>
+            <span className="text-custom-blue">Ltd</span>
+          </div>
+
+          {/* Subtitle with responsive text size */}
+          <h5 className="text-custom-blue text-xl sm:text-3xl lg:text-6xl font-extrabold uppercase mb-4 sm:mb-6 lg:mb-8 text-shadow leading-tight sm:leading-normal">
+            A dynamic ICT solutions company
+          </h5>
+
+          {/* Responsive button */}
+          <button
+            onClick={toggleAppointmentModal}
+            className="bg-custom-yellow font-semibold text-lg  rounded-md px-5 py-1 text-white mt-24"
+          >
+            Get Started
+          </button>
+        </div>
+        {showAppointmentModal && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            onClick={toggleAppointmentModal}
+          >
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full h-auto relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="absolute top-2 right-4 text-slate-700 text-4xl hover:text-gray-800"
+                onClick={toggleAppointmentModal}
+              >
+                ×
+              </button>
+              <GetAppointment /> 
+            </div>
+          </div>
+        )}
+      </section>
+
       {/* Home Section */}
-      <main
-        id="home"
-        className="flex flex-col md:flex-row justify-between   md:space-y-0 md:space-x-4 pt-2 pl-6 gap-5 py-0 z-0 scroll-animate bg-slate-100"
-      >
-        <div className="flex-1 py-10 sm:mt-0  lg:mt-12 md:text-left">
-          <h1 className="text-slate-600 text-2xl md:text-3xl lg:text-4xl">
+      <main className="flex flex-col md:flex-row justify-between   md:space-y-0 md:space-x-4 pt-2gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
+        <div className="flex-1  sm:mt-0  lg:mt-12 md:text-left">
+          <h1 className="text-custom-yellow pl-5  text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
-          <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg">
+          <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4">
             Africode Consultancy specializes in ICT consultancy, advisory
             services, capacity building, and training. We simplify enterprise
             technology and offer high-quality services at affordable prices. Our
@@ -34,7 +89,7 @@ function Body() {
           <div className="text-center md:text-left mt-10">
             <button
               onClick={scrollToServices}
-              className="flex items-center justify-center text-white bg-blue-700 font-semibold py-2 px-4 rounded-md cursor-pointer transition-colors duration-300 hover:bg-blue-800"
+              className="flex items-center ml-3 justify-center text-white bg-custom-yellow font-semibold py-2 px-4 rounded-md cursor-pointer transition-colors duration-300 hover:bg-yellow-600"
             >
               What We Offer
             </button>
@@ -50,18 +105,18 @@ function Body() {
       </main>
 
       {/* About Section */}
-      <section id="about" className=" pt-12 px-4 md:px-8 bg-slate-100">
-        <h1 className="font-bold  text-custom-blue text-center text-3xl md:text-2xl lg:text-3xl mb-10">
+      <section id="about" className=" pt-12 px-4 pb-5 md:px-8 bg-slate-100">
+        <h1 className="font-semibold  text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
         <main className="flex flex-col md:flex-row gap-8 md:gap-12">
           <div className="flex-1 flex flex-col md:flex-row gap-6 md:gap-8">
             <div className="flex-1 bg-custom-green text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div>
-                <h2 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
+                <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                   Our Mission
                 </h2>
-                <p className="leading-relaxed text-sm md:text-base">
+                <p className="leading-relaxed text-sm md:text-base ">
                   To empower people and businesses through excellently tailored
                   solutions.
                 </p>
@@ -70,10 +125,10 @@ function Body() {
 
             <div className="flex-1 bg-custom-yellow text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div>
-                <h2 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
+                <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                   Our Vision
                 </h2>
-                <p className="leading-relaxed text-sm md:text-base">
+                <p className="leading-relaxed text-sm md:text-base ">
                   To be the preferred ICT consultancy company of choice in the
                   banking and financial services industry.
                 </p>
@@ -86,7 +141,7 @@ function Body() {
           {/* Mission Card */}
           <div className="flex-1 bg-custom-black text-white p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
             <div>
-              <h2 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
+              <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                 Our Values
               </h2>
               <p className=" text-sm md:text-md mb-4 font-op">
@@ -126,7 +181,7 @@ function Body() {
       <section id="services" className=" px-4 md:px-8 bg-slate-100">
         {/* Your services content here */}
       </section>
-    </>
+    </div>
   )
 }
 

@@ -76,7 +76,7 @@ function Navbar() {
                 <ul key={section}>
                   <li
                     className={`${
-                      activeSection === section ? 'text-blue-700 font-bold' : ''
+                      activeSection === section ? 'text-custom-yellow font-bold' : ''
                     }`}
                     onClick={() => scrollToSection(section)}
                   >
@@ -88,7 +88,7 @@ function Navbar() {
           </div>
           <button
             onClick={toggleAppointmentModal}
-            className="bg-blue-500 text-white font-semibold text-md rounded-md px-2 py-1 transition-transform duration-300 hover:bg-blue-600"
+            className="bg-custom-yellow text-white font-semibold text-md rounded-md px-2 py-1 transition-transform duration-300 hover:bg-yellow-600"
           >
             Get Appointment
           </button>
@@ -129,7 +129,7 @@ function Navbar() {
             </ul>
             <button
               onClick={toggleAppointmentModal}
-              className="bg-blue-500 font-semibold text-md rounded-md p-2 text-white mt-8"
+              className="bg-custom-yellow font-semibold text-md rounded-md p-2 text-white mt-8"
             >
               Get Appointment
             </button>

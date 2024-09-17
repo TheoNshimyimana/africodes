@@ -13,6 +13,7 @@ import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
 import Edgar from '../images/hard.jpg'
 import Innocent from '../images/innocent.jpg'
+import Member from '../images/member.jpg'
 
 
 import {
@@ -100,6 +101,12 @@ const teamMembers = [
     image: Innocent,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
+  {
+    name: 'New Member',
+    role: 'Technical Consultant',
+    image: Member,
+    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+  },
 ]
 
 const TeamSection = () => {
@@ -114,7 +121,7 @@ const TeamSection = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows:false,
     autoplay: true,
     autoplaySpeed: 3000,
     vertical: true,
@@ -136,7 +143,7 @@ const TeamSection = () => {
 
   return (
     <section id="team" className="pb-16 px-4   pt-5 scroll-animate bg-slate-100">
-      <h1 className="font-bold text-custom-blue text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
+      <h1 className="font-semibold text-custom-yellow text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>
       <div className="relative h-[400px] sm:h-[400px]">
@@ -198,7 +205,7 @@ const TeamSection = () => {
                   <h2 className="font-bold text-blue-700 text-sm sm:text-lg md:text-lg mb-2">
                     {member.name}
                   </h2>
-                  <p className="text-slate-800 text-base font-medium mb-4">
+                  <p className="text-black font-semibold text-sm  mb-4">
                     {member.role}
                   </p>
                 </div>

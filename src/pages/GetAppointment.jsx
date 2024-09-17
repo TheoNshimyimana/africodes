@@ -193,7 +193,7 @@ const GetAppointment = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition duration-300"
+            className="w-full py-2 bg-custom-yellow text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition duration-300"
           >
             {loading ? <Loader /> : 'Schedule Appointment'}
           </button>
