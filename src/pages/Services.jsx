@@ -1,5 +1,5 @@
-// import { RiDiscussLine } from 'react-icons/ri'
-
+// Services.jsx
+import React, { forwardRef } from 'react'
 import {
   FaNetworkWired,
   FaStream,
@@ -15,11 +15,12 @@ import {
 import { AiOutlineApi, AiOutlineSafety } from 'react-icons/ai'
 import { MdSettings, MdBusinessCenter } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-function Services() {
+
+const Services = forwardRef((props, ref) => {
   return (
-    <section id="services" className="bg-slate-100  pt-10 ">
+    <section className="bg-slate-100 pt-10">
       {/* T24 Consultancy Section */}
-      <main className="scroll-animate pt-4">
+      <main id="services" className="pt-4" ref={ref}>
         <h1 className="font-semibold text-custom-yellow text-3xl text-center mb-10">
           Our Core Services
         </h1>
@@ -134,7 +135,7 @@ function Services() {
             <div className="text-center flex flex-col items-center">
               <MdBusinessCenter className="text-4xl text-custom-green mb-5" />
               <h1 className="text-custom-blue text-lg font-bold mt-2">
-                Management Information
+                Management Information Systems
               </h1>
               <Link to="/management_information">
                 <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
@@ -147,70 +148,90 @@ function Services() {
       </main>
 
       {/* Products */}
-      <main className="px-6 py-3  " id="products">
+      <main className="px-6 py-3" id="products">
         <h1 className="font-semibold text-custom-yellow text-3xl text-center mb-10">
-          Our products
+          Our Products
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4 gap-8">
-          {/* Service Card 1 - Afronet */}
+          {/* Product Card 1 - Afronet */}
           <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaNetworkWired className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
-              <h1 className="text-custom-blue text-lg font-bold mt-2 group-hover:text-white transition-colors duration-300">
-                Afronet
-              </h1>
-              <p className="leading-8 mt-6 text-gray-500 font-semibold text-justify ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                amet natus nobis dolorem minima tenetur voluptates esse!
+              <h1 className="text-custom-blue text-lg font-bold">Afronet</h1>
+              <p className="mt-4 mb-6 text-gray-700">
+                A comprehensive suite of products and services to streamline
+                banking operations.
               </p>
+              <Link to="/afronet">
+                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                  Details
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* Service Card 2 - Direct daily T24 transactions */}
+          {/* Product Card 2 - Direct Daily T24 Transactions */}
           <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaStream className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
-              <h1 className="text-custom-blue text-lg font-bold mt-2 group-hover:text-white transition-colors duration-300">
-                Direct daily T24 transactions and contracts streaming
+              <h1 className="text-custom-blue text-lg font-bold">
+                Direct Daily T24 Transactions
               </h1>
-              <p className="leading-8 mt-6 text-gray-500 text-justify font-semibold ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                amet natus nobis dolorem minima tenetur voluptates esse!
+              <p className="mt-4 mb-6 text-gray-700">
+                Solutions for managing daily T24 transactions and contracts
+                efficiently.
               </p>
+              <Link to="/direct_daily_t24">
+                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                  Details
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* Service Card 3 - E-statements solution */}
+          {/* Product Card 3 - E-Statements Solution */}
           <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
               <FaFileInvoice className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
-              <h1 className="text-custom-blue text-lg font-bold mt-2 group-hover:text-white transition-colors duration-300">
-                E-statements solution
+              <h1 className="text-custom-blue text-lg font-bold">
+                E-Statements Solution
               </h1>
-              <p className="leading-8 mt-6 text-gray-500 text-justify font-semibold ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                amet natus nobis dolorem minima tenetur voluptates esse!
+              <p className="mt-4 mb-6 text-gray-700">
+                Digital solutions for generating and managing electronic
+                statements.
               </p>
+              <Link to="/e_statements">
+                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                  Details
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* Service Card 4 - Dormant Accounts Management */}
+          {/* Product Card 4 - Dormant Accounts Management */}
           <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
-              <FaUserClock className="text-4xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
-              <h1 className="text-custom-blue text-lg font-bold mt-2 group-hover:text-white transition-colors duration-300">
+              <FaUserClock className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
+              <h1 className="text-custom-blue text-lg font-bold">
                 Dormant Accounts Management
               </h1>
-              <p className="leading-8 mt-6 text-gray-500 text-justify font-semibold ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                amet natus nobis dolorem minima tenetur voluptates esse!
+              <p className="mt-4 mb-6 text-gray-700">
+                Tools and solutions for managing dormant accounts and ensuring
+                compliance.
               </p>
+              <Link to="/dormant_accounts">
+                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                  Details
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </main>
     </section>
   )
-}
+})
+
+Services.displayName = 'Services'
 
 export default Services

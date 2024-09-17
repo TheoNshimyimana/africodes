@@ -3,32 +3,28 @@ import banner from '../images/banner.jpg'
 import GetAppointment from './GetAppointment'
 import Bg from '../assets/bg.jpg'
 
-
 function Body() {
-
-
   const [showAppointmentModal, setShowAppointmentModal] = useState(false)
-
-
 
   const toggleAppointmentModal = () =>
     setShowAppointmentModal(!showAppointmentModal)
 
-
   const scrollToServices = () => {
+    const navbarHeight = document.querySelector('nav')?.offsetHeight || 0
     const element = document.getElementById('services')
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      window.scrollTo({
+        top: element.offsetTop - navbarHeight,
+        behavior: 'smooth',
+      })
     }
   }
-
-
 
   return (
     <div id="home">
       <section
         style={{ backgroundImage: `url(${Bg})` }}
-        className=" w-full h-1/2 sm:h-screen flex items-center justify-center"
+        className="w-full h-1/2 sm:h-1/2 flex items-center justify-center py-6"
       >
         <div className="text-center px-4 sm:px-6 lg:px-8">
           {/* Title with responsive text size */}
@@ -46,7 +42,7 @@ function Body() {
           {/* Responsive button */}
           <button
             onClick={toggleAppointmentModal}
-            className="bg-custom-yellow font-semibold text-lg  rounded-md px-5 py-1 text-white mt-24"
+            className="bg-custom-yellow font-semibold text-lg rounded-md px-5 py-1 text-white mt-24"
           >
             Get Started
           </button>
@@ -73,9 +69,9 @@ function Body() {
       </section>
 
       {/* Home Section */}
-      <main className="flex flex-col md:flex-row justify-between   md:space-y-0 md:space-x-4 pt-2gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
-        <div className="flex-1  sm:mt-0  lg:mt-12 md:text-left">
-          <h1 className="text-custom-yellow pl-5  text-2xl md:text-3xl lg:text-4xl">
+      <main className="flex flex-col md:flex-row justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
+        <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left">
+          <h1 className="text-custom-yellow pl-5 text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
           <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4">
@@ -109,8 +105,8 @@ function Body() {
       </main>
 
       {/* About Section */}
-      <section id="about" className=" pt-12 px-4 pb-5 md:px-8 bg-slate-100">
-        <h1 className="font-semibold  text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
+      <section id="about" className="pt-12 px-4 pb-5 md:px-8 bg-slate-100">
+        <h1 className="font-semibold text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
         <main className="flex flex-col md:flex-row gap-8 md:gap-12">
@@ -138,41 +134,38 @@ function Body() {
                 </p>
               </div>
             </div>
-
-            {/* Values Card */}
           </div>
 
-          {/* Mission Card */}
           <div className="flex-1 bg-custom-black text-white p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
             <div>
               <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                 Our Values
               </h2>
-              <p className=" text-sm md:text-md mb-4 font-op">
+              <p className="text-sm md:text-md mb-4 font-op">
                 <strong className="font-bold">Accountability: </strong>
                 We accept responsibility for our actions and make business
                 decisions based on experience and good judgment.
               </p>
-              <p className=" text-sm md:text-md mb-4">
+              <p className="text-sm md:text-md mb-4">
                 <strong className="font-bold">
-                  Customer Service Excellence :
+                  Customer Service Excellence:
                 </strong>
                 We are committed to satisfying customer needs and honoring the
                 commitments we make to them.
               </p>
-              <p className=" text-sm md:text-md mb-4">
+              <p className="text-sm md:text-md mb-4">
                 <strong className="font-bold">Teamwork: </strong> We believe in
                 teamwork for efficient and effective delivery of our services.
               </p>
-              <p className=" text-sm md:text-md mb-4">
+              <p className="text-sm md:text-md mb-4">
                 <strong className="font-bold">Integrity:</strong> We act with
                 honesty and integrity, never compromising the truth.
               </p>
-              <p className=" text-sm md:text-md mb-4">
+              <p className="text-sm md:text-md mb-4">
                 <strong className="font-bold">Respect: </strong> We give the
                 utmost respect to our stakeholders at all times.
               </p>
-              <p className=" text-sm md:text-md">
+              <p className="text-sm md:text-md">
                 <strong className="font-bold">Reliability: </strong> We deliver
                 as per our promise.
               </p>
@@ -182,7 +175,7 @@ function Body() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className=" px-4 md:px-8 bg-slate-100">
+      <section id="services" className="px-4 md:px-8 bg-slate-100">
         {/* Your services content here */}
       </section>
     </div>

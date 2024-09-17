@@ -9,12 +9,10 @@ import Bless from '../images/blissful.jpg'
 import Kenny from '../images/mynza.jpg'
 import Tinashe from '../images/nzdwe.jpg'
 import Manzi from '../images/manzi.jpg'
-import Anotinda from '../images/anotind.jpg'
 import Willy from '../images/willmun.jpg'
 import Edgar from '../images/hard.jpg'
 import Innocent from '../images/innocent.jpg'
-import Member from '../images/member.jpg'
-
+import Anotinda from '../images/annotinda.jpg'
 
 import {
   FaFacebookF,
@@ -101,12 +99,6 @@ const teamMembers = [
     image: Innocent,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
-  {
-    name: 'New Member',
-    role: 'Technical Consultant',
-    image: Member,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
-  },
 ]
 
 const TeamSection = () => {
@@ -121,7 +113,7 @@ const TeamSection = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:false,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
     vertical: true,
@@ -142,7 +134,10 @@ const TeamSection = () => {
   const settings = isMobile ? verticalSettings : horizontalSettings
 
   return (
-    <section id="team" className="pb-16 px-4   pt-5 scroll-animate bg-slate-100">
+    <section
+      id="team"
+      className="pb-16 px-4   pt-5 scroll-animate bg-slate-100"
+    >
       <h1 className="font-semibold text-custom-yellow text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>

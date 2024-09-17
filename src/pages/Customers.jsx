@@ -5,11 +5,9 @@ import { useMediaQuery } from 'react-responsive'
 import Brd from '../assets/brd.jpg'
 import Bpr from '../assets/bpr.webp'
 import Ncb from '../assets/ncba2.png'
-import Kcb from '../assets/kcb2.jpg'
+import Kcb from '../images/logosmall.webp'
 import Nmb from '../assets/nmb1.jpg'
 import Tropical from '../assets/tropical.png'
-import Sbm from '../assets/sbm..jpg'
-import Stanbank from '../assets/stanbank.png'
 import Ba from '../assets/ba.jpg'
 import Trop from '../assets/trop.png'
 
@@ -17,7 +15,7 @@ import Nerma from '../assets/Nerma.jpeg'
 import E_solution from '../assets/E-solution.jpeg'
 import Ckg from '../assets/Ckg.jpg'
 import Usi from '../assets/Usi.jpeg'
-import Degree from '../assets/45-Degres.jpeg'
+import Logo from '../assets/logo_1.png'
 
 const Customers = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
@@ -63,15 +61,12 @@ const Customers = () => {
           className="w-44 h-24 object-cover mx-auto"
         />
         <img
-          src={Sbm}
+          src={Logo}
           alt="Customer Logo"
           className="w-44 h-24 object-cover mx-auto"
         />
-        <img
-          src={Stanbank}
-          alt="Customer Logo"
-          className="w-44 h-24 object-cover mx-auto"
-        />
+       
+        
         <img
           src={Ba}
           alt="Customer Logo"
@@ -86,32 +81,28 @@ const Customers = () => {
       <h1 className="font-semibold text-custom-yellow text-3xl mt-10 text-center pt-10 mb-10">
         Our Partners
       </h1>
-      <div className="flex-wrap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-4 gap-6">
-        <img
-          src={Degree}
-          alt="Partner Logo"
-          className="w-44 h-24 object-cover mx-auto"
-        />
+      <div className="flex-wrap grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 mt-4 gap-6">
+        
         <img
           src={Nerma}
           alt="Partner Logo"
-          className="w-44 h-24 object-cover mx-auto"
+          className="w-60 h-32 object-cover mx-auto"
         />
         <img
           src={Ckg}
           alt="Partner Logo"
-          className="w-44 h-24 object-cover mx-auto"
+          className="w-60 h-32 object-cover mx-auto"
         />
         <img
           src={E_solution}
           alt="Partner Logo"
-          className="w-44 h-24 object-cover mx-auto"
+          className="w-60 h-32 object-cover mx-auto"
         />
 
         <img
           src={Usi}
           alt="Partner Logo"
-          className="w-44 h-24 object-cover mx-auto"
+          className="w-60 h-32 object-cover mx-auto"
         />
       </div>
     </section>
