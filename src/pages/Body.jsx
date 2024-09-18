@@ -70,8 +70,8 @@ function Body() {
 
       {/* Home Section */}
       <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
-        <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left ">
-          <h1 className="text-custom-yellow pl-5 text-2xl md:text-3xl lg:text-4xl">
+        <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left pl-6">
+          <h1 className="text-custom-yellow  text-2xl md:text-3xl pl-4 lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
           <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4">
