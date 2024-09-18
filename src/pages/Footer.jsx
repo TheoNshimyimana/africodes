@@ -10,9 +10,14 @@ function Footer() {
   const handleScroll = (e, id) => {
     e.preventDefault()
     const target = document.querySelector(id)
-    target?.scrollIntoView({
+    const navbarHeight = document.querySelector('nav').offsetHeight // Get the height of the navbar
+    const targetPosition =
+      target?.getBoundingClientRect().top + window.pageYOffset - navbarHeight // Calculate scroll position
+
+    // Smooth scroll to the target position accounting for the navbar height
+    window.scrollTo({
+      top: targetPosition,
       behavior: 'smooth',
-      block: 'start',
     })
   }
 
