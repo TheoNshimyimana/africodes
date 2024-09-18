@@ -1,13 +1,11 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import banner from '../images/banner.jpg'
-import GetAppointment from './GetAppointment'
-import Bg from '../assets/bg.jpg'
+// import GetAppointment from './GetAppointment'
+// import Bg from '../assets/bg.jpg'
 
 function Body() {
-  const [showAppointmentModal, setShowAppointmentModal] = useState(false)
 
-  const toggleAppointmentModal = () =>
-    setShowAppointmentModal(!showAppointmentModal)
+  
 
   const scrollToServices = () => {
     const navbarHeight = document.querySelector('nav')?.offsetHeight || 0
@@ -23,53 +21,8 @@ function Body() {
   return (
     <>
       <section id="home">
-        <section
-        //   style={{ backgroundImage: `url(${Bg})` }}
-        //   className="w-full h-1/2 sm:h-1/2 flex items-center justify-center py-20"
-        // >
-          {/* <div className="text-center px-4 sm:px-6 lg:px-8">
-            Title with responsive text size
-            <div className="flex flex-col sm:flex-row justify-center text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-shadow">
-              <span className="text-custom-blue">AFRICODE</span>
-              <span className="text-custom-yellow mx-0 sm:mx-2">
-                CONSULTANCY
-              </span>
-              <span className="text-custom-blue">Ltd</span>
-            </div>
-
-            Subtitle with responsive text size
-            <h5 className="text-custom-blue text-xl sm:text-3xl lg:text-6xl font-extrabold uppercase mb-4 sm:mb-6 lg:mb-8 text-shadow leading-tight sm:leading-normal">
-              A dynamic ICT solutions company
-            </h5> */}
-
-            {/* Responsive button */}
-            {/* <button
-            onClick={toggleAppointmentModal}
-            className="bg-custom-yellow font-semibold text-lg rounded-md px-5 py-1 text-white mt-24"
-          >
-            Get Started
-          </button>
-          </div>
-          {showAppointmentModal && (
-            <div
-              className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-              onClick={toggleAppointmentModal}
-            >
-              <div
-                className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full h-auto relative"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <button
-                  className="absolute top-2 right-4 text-slate-700 text-4xl hover:text-gray-800"
-                  onClick={toggleAppointmentModal}
-                >
-                  ×
-                </button>
-                <GetAppointment />
-              </div>
-            </div>
-          )}
-        </section> */}
+        {/* <section */}
+       
 
         {/* Home Section */}
         <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
