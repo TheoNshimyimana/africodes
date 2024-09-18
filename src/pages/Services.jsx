@@ -162,11 +162,7 @@ const Services = forwardRef((props, ref) => {
                 A comprehensive suite of products and services to streamline
                 banking operations.
               </p>
-              <Link to="/afronet">
-                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
-                  Details
-                </button>
-              </Link>
+              
             </div>
           </div>
 
@@ -181,11 +177,7 @@ const Services = forwardRef((props, ref) => {
                 Solutions for managing daily T24 transactions and contracts
                 efficiently.
               </p>
-              <Link to="/direct_daily_t24">
-                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
-                  Details
-                </button>
-              </Link>
+              
             </div>
           </div>
 
@@ -200,11 +192,7 @@ const Services = forwardRef((props, ref) => {
                 Digital solutions for generating and managing electronic
                 statements.
               </p>
-              <Link to="/e_statements">
-                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
-                  Details
-                </button>
-              </Link>
+            
             </div>
           </div>
 
@@ -219,11 +207,8 @@ const Services = forwardRef((props, ref) => {
                 Tools and solutions for managing dormant accounts and ensuring
                 compliance.
               </p>
-              <Link to="/dormant_accounts">
-                <button className="px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
-                  Details
-                </button>
-              </Link>
+              
+              
             </div>
           </div>
         </div>

@@ -141,14 +141,14 @@ const TeamSection = () => {
       <h1 className="font-semibold text-custom-yellow text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>
-      <div className="relative h-[400px] sm:h-[400px]">
+      <div className="relative h-[400px] sm:h-[400px] ">
         <Slider {...settings} className="w-full">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="p-4 flex justify-center items-center h-full"
             >
-              <div className="relative bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center min-h-[400px] group transition-transform duration-300 ease-in-out transform hover:scale-105">
+              <div className="relative bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center min-h-[400px] group cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105">
                 <img
                   src={member.image}
                   alt={member.name}
