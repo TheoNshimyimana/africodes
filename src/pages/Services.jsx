@@ -158,7 +158,7 @@ const Services = forwardRef((props, ref) => {
             <div className="text-center flex flex-col items-center">
               <FaNetworkWired className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">Afronet</h1>
-              <p className="mt-4 mb-6 text-gray-600 text-left">
+              <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque sapiente culpa non perferendis nam. Quod quo voluptatem ducimus numquam?
               </p>
               
@@ -172,7 +172,7 @@ const Services = forwardRef((props, ref) => {
               <h1 className="text-custom-blue text-lg font-bold">
                 Direct Daily T24 Transactions
               </h1>
-              <p className="mt-4 mb-6 text-gray-600 text-left">
+              <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum neque sapiente cumque quasi voluptate quam animi quas.
               </p>
               
@@ -186,7 +186,7 @@ const Services = forwardRef((props, ref) => {
               <h1 className="text-custom-blue text-lg font-bold">
                 E-Statements Solution
               </h1>
-              <p className="mt-4 mb-6 text-gray-600 text-left">
+              <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dignissimos itaque accusamus laudantium facilis temporibus! Odio ab exercitationem numquam veritatis eius? Nemo eos omnis asperiores eius dolores minima voluptate vitae?
               </p>
             
@@ -200,7 +200,7 @@ const Services = forwardRef((props, ref) => {
               <h1 className="text-custom-blue text-lg font-bold">
                 Dormant Accounts Management
               </h1>
-              <p className="mt-4 mb-6 text-gray-600 text-left">
+              <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque in iste fuga soluta aliquid!
               </p>
               

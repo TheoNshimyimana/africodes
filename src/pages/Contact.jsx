@@ -66,7 +66,7 @@ function Contact() {
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div className="text-center p-4 shadow-md rounded-lg bg-slate-100">
             <IoLocationOutline className="text-5xl text-custom-blue mx-auto" />
-            <h2 className="text-blue-500 text-xl font-semibold mt-3">
+            <h2 className="text-custom-blue text-xl font-semibold mt-3">
               Address
             </h2>
             <p className="text-gray-600">
@@ -91,7 +91,7 @@ function Contact() {
           </div>
           <div className="text-center p-4 bg-slate-100 shadow-md rounded-lg">
             <MdOutlineMail className="text-5xl text-custom-blue mx-auto" />
-            <h2 className="text-blue-500 text-xl font-semibold mt-3">
+            <h2 className="text-custom-blue text-xl font-semibold mt-3">
               Email Us
             </h2>
             <p className="text-gray-700">info@africodeconsult.com</p>

@@ -105,7 +105,7 @@ function Body() {
       </main>
 
       {/* About Section */}
-      <section id="about" className="pt-14 px-4 pb-10 md:px-8 bg-slate-100">
+      <section id="about" className="pt-14 px-4 pb-16 md:px-8 bg-slate-100">
         <h1 className="font-semibold text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
@@ -136,7 +136,7 @@ function Body() {
             </div>
           </div>
 
-          <div className="flex-1 bg-custom-black text-white py-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
+          <div className="flex-1 bg-custom-black text-white pb-14 pt-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
             <div>
               <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                 Our Values
