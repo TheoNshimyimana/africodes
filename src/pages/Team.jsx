@@ -138,7 +138,7 @@ const TeamSection = () => {
       id="team"
       className="pb-16 px-4   pt-5 scroll-animate bg-slate-100"
     >
-      <h1 className="font-semibold text-custom-yellow text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
+      <h1 className=" text-custom-yellow text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>
       <div className="relative h-[400px] sm:h-[400px] ">

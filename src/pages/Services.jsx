@@ -21,7 +21,7 @@ const Services = forwardRef((props, ref) => {
     <section className="bg-slate-100 pt-10">
       {/* T24 Consultancy Section */}
       <main id="services" className="pt-4" ref={ref}>
-        <h1 className="font-semibold text-custom-yellow text-3xl text-center mb-10">
+        <h1 className=" text-custom-yellow text-3xl text-center mb-10">
           Our Core Services
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 pb-14 px-5 gap-4">
@@ -149,7 +149,7 @@ const Services = forwardRef((props, ref) => {
 
       {/* Products */}
       <main className="px-6 py-10" id="products">
-        <h1 className="font-semibold text-custom-yellow text-3xl text-center mb-10">
+        <h1 className=" text-custom-yellow text-3xl text-center mb-10">
           Our Products
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4 gap-8">

@@ -21,14 +21,14 @@ function Body() {
   }
 
   return (
-    < >
+    <>
       <section id="home">
         <section
-          style={{ backgroundImage: `url(${Bg})` }}
-          className="w-full h-1/2 sm:h-1/2 flex items-center justify-center py-20"
-        >
-          <div className="text-center px-4 sm:px-6 lg:px-8">
-            {/* Title with responsive text size */}
+        //   style={{ backgroundImage: `url(${Bg})` }}
+        //   className="w-full h-1/2 sm:h-1/2 flex items-center justify-center py-20"
+        // >
+          {/* <div className="text-center px-4 sm:px-6 lg:px-8">
+            Title with responsive text size
             <div className="flex flex-col sm:flex-row justify-center text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-shadow">
               <span className="text-custom-blue">AFRICODE</span>
               <span className="text-custom-yellow mx-0 sm:mx-2">
@@ -37,10 +37,10 @@ function Body() {
               <span className="text-custom-blue">Ltd</span>
             </div>
 
-            {/* Subtitle with responsive text size */}
+            Subtitle with responsive text size
             <h5 className="text-custom-blue text-xl sm:text-3xl lg:text-6xl font-extrabold uppercase mb-4 sm:mb-6 lg:mb-8 text-shadow leading-tight sm:leading-normal">
               A dynamic ICT solutions company
-            </h5>
+            </h5> */}
 
             {/* Responsive button */}
             {/* <button
@@ -48,7 +48,7 @@ function Body() {
             className="bg-custom-yellow font-semibold text-lg rounded-md px-5 py-1 text-white mt-24"
           >
             Get Started
-          </button> */}
+          </button>
           </div>
           {showAppointmentModal && (
             <div
@@ -69,7 +69,7 @@ function Body() {
               </div>
             </div>
           )}
-        </section>
+        </section> */}
 
         {/* Home Section */}
         <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
@@ -110,12 +110,12 @@ function Body() {
 
       {/* About Section */}
       <section id="about" className="pt-14 px-4 pb-16 md:px-8 bg-slate-100">
-        <h1 className="font-semibold text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
+        <h1 className=" text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
         <main className="flex flex-col md:flex-row gap-8 md:gap-12">
           <div className="flex-1 flex flex-col md:flex-row gap-6 md:gap-8">
-            <div className="flex-1 bg-custom-green text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex-1 bg-custom-green text-black pt-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div>
                 <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                   Our Mission
@@ -127,7 +127,7 @@ function Body() {
               </div>
             </div>
 
-            <div className="flex-1 bg-custom-yellow text-black p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex-1 bg-custom-yellow text-black pt-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div>
                 <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                   Our Vision
