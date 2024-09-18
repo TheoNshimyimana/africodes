@@ -148,7 +148,7 @@ const Services = forwardRef((props, ref) => {
       </main>
 
       {/* Products */}
-      <main className="px-6 py-3" id="products">
+      <main className="px-6 py-10" id="products">
         <h1 className="font-semibold text-custom-yellow text-3xl text-center mb-10">
           Our Products
         </h1>
@@ -159,8 +159,7 @@ const Services = forwardRef((props, ref) => {
               <FaNetworkWired className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">Afronet</h1>
               <p className="mt-4 mb-6 text-gray-700">
-                A comprehensive suite of products and services to streamline
-                banking operations.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque sapiente culpa non perferendis nam. Quod quo voluptatem ducimus numquam?
               </p>
               
             </div>
@@ -174,8 +173,7 @@ const Services = forwardRef((props, ref) => {
                 Direct Daily T24 Transactions
               </h1>
               <p className="mt-4 mb-6 text-gray-700">
-                Solutions for managing daily T24 transactions and contracts
-                efficiently.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum neque sapiente cumque quasi voluptate quam animi quas.
               </p>
               
             </div>
@@ -189,8 +187,7 @@ const Services = forwardRef((props, ref) => {
                 E-Statements Solution
               </h1>
               <p className="mt-4 mb-6 text-gray-700">
-                Digital solutions for generating and managing electronic
-                statements.
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dignissimos itaque accusamus laudantium facilis temporibus! Odio ab exercitationem numquam veritatis eius? Nemo eos omnis asperiores eius dolores minima voluptate vitae?
               </p>
             
             </div>
@@ -204,8 +201,7 @@ const Services = forwardRef((props, ref) => {
                 Dormant Accounts Management
               </h1>
               <p className="mt-4 mb-6 text-gray-700">
-                Tools and solutions for managing dormant accounts and ensuring
-                compliance.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque in iste fuga soluta aliquid!
               </p>
               
               

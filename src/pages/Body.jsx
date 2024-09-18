@@ -24,7 +24,7 @@ function Body() {
     <div id="home">
       <section
         style={{ backgroundImage: `url(${Bg})` }}
-        className="w-full h-1/2 sm:h-1/2 flex items-center justify-center py-6"
+        className="w-full h-1/2 sm:h-1/2 flex items-center justify-center py-20"
       >
         <div className="text-center px-4 sm:px-6 lg:px-8">
           {/* Title with responsive text size */}
@@ -40,12 +40,12 @@ function Body() {
           </h5>
 
           {/* Responsive button */}
-          <button
+          {/* <button
             onClick={toggleAppointmentModal}
             className="bg-custom-yellow font-semibold text-lg rounded-md px-5 py-1 text-white mt-24"
           >
             Get Started
-          </button>
+          </button> */}
         </div>
         {showAppointmentModal && (
           <div
@@ -69,8 +69,8 @@ function Body() {
       </section>
 
       {/* Home Section */}
-      <main className="flex flex-col md:flex-row justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
-        <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left">
+      <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
+        <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left ">
           <h1 className="text-custom-yellow pl-5 text-2xl md:text-3xl lg:text-4xl">
             Africode Consultancy Ltd
           </h1>
@@ -105,7 +105,7 @@ function Body() {
       </main>
 
       {/* About Section */}
-      <section id="about" className="pt-12 px-4 pb-5 md:px-8 bg-slate-100">
+      <section id="about" className="pt-14 px-4 pb-10 md:px-8 bg-slate-100">
         <h1 className="font-semibold text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
@@ -136,7 +136,7 @@ function Body() {
             </div>
           </div>
 
-          <div className="flex-1 bg-custom-black text-white p-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
+          <div className="flex-1 bg-custom-black text-white py-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
             <div>
               <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
                 Our Values

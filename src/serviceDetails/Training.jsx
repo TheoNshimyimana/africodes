@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FaChalkboardTeacher } from 'react-icons/fa'
 
 const Training = () => {
@@ -22,9 +21,9 @@ const Training = () => {
             administration. This training is tailored to ensure users can fully
             leverage T24's capabilities to streamline banking operations.
           </p>
-          <Link to="/" className=" text-white mb-5 hover:bg-yellow-600 bg-custom-yellow rounded-lg px-3 py-1">
+          <button className=" text-white mb-5 hover:bg-yellow-600 bg-custom-yellow rounded-lg px-3 py-1">
             &larr; Back to Home
-          </Link>
+          </button>
         </div>
       </div>
     </div>
