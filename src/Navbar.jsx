@@ -15,22 +15,6 @@ function Navbar() {
   const toggleAppointmentModal = () =>
     setShowAppointmentModal(!showAppointmentModal)
 
-  // Smooth scroll to section
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      const navbarHeight = document.querySelector('nav').offsetHeight
-      const yOffset = -navbarHeight
-      const y =
-        element.getBoundingClientRect().top + window.pageYOffset + yOffset
-
-      window.scrollTo({ top: y, behavior: 'smooth' })
-
-      setActiveSection(sectionId) // Set active section on click
-      setMobileMenuOpen(false) // Close mobile menu if open
-    }
-  }
-
   // Scroll behavior for active section and shadow
   useEffect(() => {
     const handleScroll = () => {
@@ -49,19 +33,16 @@ function Navbar() {
         if (element) {
           const rect = element.getBoundingClientRect()
           const windowHeight = window.innerHeight
-          const isVisible =
-            rect.top < windowHeight / 2 && rect.bottom > windowHeight / 2
-          if (isVisible) {
+          const offset = 200 // Buffer to make section highlight before reaching middle
+
+          if (rect.top >= 0 && rect.top < windowHeight - offset) {
             currentSection = section
           }
         }
       })
 
-      console.log(`Current Section: ${currentSection}`) // Log current section
       setActiveSection(currentSection)
       setHasShadow(window.scrollY > 0)
-      document.body.style.backgroundColor =
-        window.scrollY > 0 ? '#ffffff' : '#f5f5f5'
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -69,6 +50,18 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const navbarHeight = document.querySelector('nav').offsetHeight
+      const yOffset = -navbarHeight
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset
+
+      window.scrollTo({ top: y, behavior: 'smooth' })
+      setMobileMenuOpen(false) // Close mobile menu if open
+    }
+  }
 
   return (
     <>
