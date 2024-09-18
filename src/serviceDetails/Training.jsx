@@ -1,6 +1,9 @@
 import { FaChalkboardTeacher } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 const Training = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="bg-bg-image min-h-screen items-center justify-center flex py-10 px-5 sm:px-10">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
@@ -21,8 +24,11 @@ const Training = () => {
             administration. This training is tailored to ensure users can fully
             leverage T24's capabilities to streamline banking operations.
           </p>
-          <button className=" text-white mb-5 hover:bg-yellow-600 bg-custom-yellow rounded-lg px-3 py-1">
-            &larr; Back to Home
+          <button
+            onClick={() => navigate(-1)} // Navigates back to the previous page
+            className="text-white hover:bg-yellow-600 bg-custom-yellow rounded-lg px-4 py-2 shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center"
+          >
+            &larr; Back to Services
           </button>
         </div>
       </div>

@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import { MdBusinessCenter } from 'react-icons/md'
+import { useNavigate } from 'react-router-dom'
 
 const InfoManagement = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="bg-bg-image min-h-screen items-center justify-center flex py-10 px-5 sm:px-10">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
@@ -21,12 +24,12 @@ const InfoManagement = () => {
             analytics, and real-time monitoring to help management teams track
             performance, forecast trends, and optimize operations.
           </p>
-          <Link
-            to="/"
-            className=" text-white mb-5 hover:bg-yellow-600 bg-custom-yellow rounded-lg px-3 py-1"
+          <button
+            onClick={() => navigate(-1)} // Navigates back to the previous page
+            className="text-white hover:bg-yellow-600 bg-custom-yellow rounded-lg px-4 py-2 shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center"
           >
-            &larr; Back to Home
-          </Link>
+            &larr; Back to Services
+          </button>
         </div>
       </div>
     </div>
