@@ -16,6 +16,7 @@ import E_solution from '../assets/E-solution.jpeg'
 import Ckg from '../assets/Ckg.jpg'
 import Usi from '../assets/Usi.jpeg'
 import Logo from '../assets/logo_1.png'
+import Tat from '../assets/tat.jpeg'
 
 const Customers = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
@@ -42,6 +43,11 @@ const Customers = () => {
         />
         <img
           src={Kcb}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
+        />
+        <img
+          src={Tat}
           alt="Customer Logo"
           className="w-44 h-24 object-cover mx-auto"
         />

@@ -86,7 +86,7 @@ function Contact() {
             <h2 className="text-custom-blue text-xl font-semibold mt-3">
               Call Us
             </h2>
-            <p className="text-gray-600">Mobile RW: +250 781 467 638</p>
+            <p className="text-gray-600">Mobile RW: +250 793 904 972</p>
             <p className="text-gray-600">Mobile RW: +250 789 176 953</p>
           </div>
           <div className="text-center p-4 bg-slate-100 shadow-md rounded-lg">
@@ -137,7 +137,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`bg-custom-blue font-semibold w-1/2 text-lg rounded-md p-1 mt-4 text-white hover:bg-yellow-600 transition duration-300 ${
+                className={`bg-custom-blue font-semibold w-1/2 text-lg rounded-md p-1 mt-4 text-white hover:bg-blue-600 transition duration-300 ${
                   loading ? 'cursor-not-allowed' : ''
                 }`}
               >
