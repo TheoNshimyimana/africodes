@@ -57,45 +57,45 @@ const teamMembers = [
   },
   {
     name: 'Kenny Munyaneza Roger',
-    role: 'Technical Consultant',
+    role: 'T24 Technical Consultant',
     image: Kenny,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
 
   {
     name: 'Tinashe Nedziwe',
-    role: 'Senior Consultant',
+    role: 'T24 Senior Consultant',
     image: Tinashe,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
 
   {
     name: 'Frank Manzi',
-    role: 'Technical Consultant',
+    role: 'T24 Technical Consultant',
     image: Manzi,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
   {
     name: 'Anotinda Mangwanda',
-    role: 'Technical Consultant',
+    role: 'T24 Technical Consultant',
     image: Anotinda,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
   {
     name: 'Edgar Tibeihaho',
-    role: 'Business Management',
+    role: 'T24 Business Management',
     image: Edgar,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
   {
     name: 'Munezero Hirwa Willy Christel',
-    role: 'Technical Consultant',
+    role: 'T24 Technical Consultant',
     image: Willy,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
   {
     name: 'Innocent Ndahiriwe',
-    role: 'Technical Consultant',
+    role: 'T24 Technical Consultant',
     image: Innocent,
     social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
   },
@@ -138,7 +138,7 @@ const TeamSection = () => {
       id="team"
       className="pb-16 px-4   pt-5 scroll-animate bg-slate-100"
     >
-      <h1 className=" text-custom-yellow text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
+      <h1 className=" font-semibold text-custom-blue text-3xl sm:text-xl md:text-2xl lg:text-3xl text-center mt-10 mb-8">
         Our Team
       </h1>
       <div className="relative h-[400px] sm:h-[400px] ">

@@ -58,7 +58,7 @@ function Contact() {
       id="contact"
       className="px-4 sm:px-8 lg:px-4 bg-slate-100 relative pt-10 z-10 "
     >
-      <h1 className=" text-custom-yellow text-3xl sm:text-base lg:text-3xl text-center mt-6 mb-8">
+      <h1 className=" font-semibold text-custom-blue text-3xl sm:text-base lg:text-3xl text-center mt-6 mb-8">
         Contact Us
       </h1>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-4">
@@ -137,7 +137,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`bg-custom-yellow font-semibold w-1/2 text-lg rounded-md p-1 mt-4 text-white hover:bg-yellow-600 transition duration-300 ${
+                className={`bg-custom-blue font-semibold w-1/2 text-lg rounded-md p-1 mt-4 text-white hover:bg-yellow-600 transition duration-300 ${
                   loading ? 'cursor-not-allowed' : ''
                 }`}
               >

@@ -78,16 +78,16 @@ function Navbar() {
 
         {/* Navbar Links (Desktop) */}
         <div className="hidden md:flex items-center justify-end gap-10 mr-10">
-          <div className="flex items-center justify-center font-semibold text-custom-blue gap-7 cursor-pointer">
+          <div className="flex items-center justify-center font-bold text-custom-blue gap-7 cursor-pointer">
             {['home', 'about', 'services', 'products', 'team', 'contact'].map(
               (section) => (
                 <ul key={section}>
                   <li
                     className={`${
                       activeSection === section
-                        ? 'text-custom-yellow font-bold'
+                        ? 'text-blue-700 font-bold'
                         : ''
-                    } hover:text-custom-yellow transition-colors duration-200`}
+                    } hover:text-blue-600 transition-colors duration-200`}
                     onClick={() => scrollToSection(section)}
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -98,7 +98,7 @@ function Navbar() {
           </div>
           <button
             onClick={toggleAppointmentModal}
-            className="bg-custom-yellow text-white font-semibold text-md rounded-md px-4 py-2 transition-transform duration-300 hover:bg-yellow-600"
+            className="bg-custom-blue text-white font-semibold text-md rounded-md px-4 py-2 transition-transform duration-300 hover:bg-blue-700"
           >
             Get Appointment
           </button>
@@ -122,8 +122,8 @@ function Navbar() {
                   <li
                     key={section}
                     className={`${
-                      activeSection === section ? 'text-blue-700 font-bold' : ''
-                    } hover:text-custom-yellow transition-colors duration-200`}
+                      activeSection === section ? 'text-custom-blue font-bold' : ''
+                    } hover:text-blue-700 transition-colors duration-200`}
                     onClick={() => scrollToSection(section)}
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -133,7 +133,7 @@ function Navbar() {
             </ul>
             <button
               onClick={toggleAppointmentModal}
-              className="bg-custom-yellow font-semibold text-md rounded-md p-2 text-white mt-8 hover:bg-yellow-600 transition-colors"
+              className="bg-custom-blue font-semibold text-md rounded-md p-2 text-white mt-8 hover:bg-blue-600 transition-colors"
             >
               Get Appointment
             </button>

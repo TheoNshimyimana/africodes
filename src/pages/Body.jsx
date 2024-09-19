@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import banner from '../images/banner.jpg'
 // import GetAppointment from './GetAppointment'
-// import Bg from '../assets/bg.jpg'
+import Bg from '../assets/bg.jpg'
 
 function Body() {
 
@@ -21,13 +21,15 @@ function Body() {
   return (
     <>
       <section id="home">
-        {/* <section */}
+        <main >
+
+        </main>
        
 
         {/* Home Section */}
         <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
           <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left pl-6">
-            <h1 className="text-custom-yellow  text-2xl md:text-3xl pl-4 lg:text-4xl">
+            <h1 className="text-custom-blue  text-2xl md:text-3xl pl-4 lg:text-4xl">
               Africode Consultancy Ltd
             </h1>
             <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4">
@@ -45,7 +47,7 @@ function Body() {
             <div className="text-center md:text-left mt-10">
               <button
                 onClick={scrollToServices}
-                className="flex items-center ml-3 justify-center text-white bg-custom-yellow font-semibold py-2 px-4 rounded-md cursor-pointer transition-colors duration-300 hover:bg-yellow-600"
+                className="flex items-center ml-3 justify-center text-white bg-custom-blue font-semibold py-2 px-4 rounded-md cursor-pointer transition-colors duration-300 hover:bg-yellow-600"
               >
                 What We Offer
               </button>
@@ -63,17 +65,17 @@ function Body() {
 
       {/* About Section */}
       <section id="about" className="pt-14 px-4 pb-16 md:px-8 bg-slate-100">
-        <h1 className=" text-custom-yellow text-center text-3xl md:text-2xl lg:text-3xl mb-10">
+        <h1 className=" font-semibold text-custom-blue text-center text-3xl md:text-2xl lg:text-3xl mb-10">
           About Us
         </h1>
         <main className="flex flex-col md:flex-row gap-8 md:gap-12">
           <div className="flex-1 flex flex-col md:flex-row gap-6 md:gap-8">
             <div className="flex-1 bg-custom-green text-black pt-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div>
-                <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
+                <h2 className="font-bold text-xl md:text-2xl lg:text-3xl mb-4">
                   Our Mission
                 </h2>
-                <p className="leading-relaxed text-sm md:text-base ">
+                <p className="leading-relaxed text-md md:text-base font-semibold ">
                   To empower people and businesses through excellently tailored
                   solutions.
                 </p>
@@ -82,10 +84,10 @@ function Body() {
 
             <div className="flex-1 bg-custom-yellow text-black pt-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div>
-                <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
+                <h2 className="font-bold text-xl md:text-2xl lg:text-3xl mb-4">
                   Our Vision
                 </h2>
-                <p className="leading-relaxed text-sm md:text-base ">
+                <p className="leading-relaxed text-md md:text-base font-semibold ">
                   To be the preferred ICT consultancy company of choice in the
                   banking and financial services industry.
                 </p>
@@ -95,35 +97,35 @@ function Body() {
 
           <div className="flex-1 bg-custom-black text-white pb-14 pt-10 px-6 rounded-lg shadow-xl flex flex-col justify-between transition-transform duration-300 ease-in-out transform hover:scale-105">
             <div>
-              <h2 className="font-semibold text-lg md:text-xl lg:text-2xl mb-4">
+              <h2 className="font-bold text-xl md:text-2xl lg:text-3xl mb-4">
                 Our Values
               </h2>
-              <p className="text-sm md:text-md mb-4 font-op">
-                <strong className="font-bold">Accountability: </strong>
+              <p className="text-md md:text-md mb-4 ">
+                <strong className="font-extrabold text-custom-blue">Accountability: </strong>
                 We accept responsibility for our actions and make business
                 decisions based on experience and good judgment.
               </p>
               <p className="text-sm md:text-md mb-4">
-                <strong className="font-bold">
+                <strong className="font-extrabold text-custom-blue">
                   Customer Service Excellence:
-                </strong>
+                 </strong>
                 We are committed to satisfying customer needs and honoring the
                 commitments we make to them.
               </p>
-              <p className="text-sm md:text-md mb-4">
-                <strong className="font-bold">Teamwork: </strong> We believe in
+              <p className="text-md md:text-md mb-4">
+                <strong className="font-extrabold text-custom-blue">Teamwork: </strong> We believe in
                 teamwork for efficient and effective delivery of our services.
               </p>
-              <p className="text-sm md:text-md mb-4">
-                <strong className="font-bold">Integrity:</strong> We act with
+              <p className="text-md md:text-md mb-4">
+                <strong className="font-bold text-custom-blue">Integrity: </strong> We act with
                 honesty and integrity, never compromising the truth.
               </p>
-              <p className="text-sm md:text-md mb-4">
-                <strong className="font-bold">Respect: </strong> We give the
+              <p className="text-md md:text-md mb-4">
+                <strong className="font-extrabold text-custom-blue">Respect: </strong> We give the
                 utmost respect to our stakeholders at all times.
               </p>
-              <p className="text-sm md:text-md">
-                <strong className="font-bold">Reliability: </strong> We deliver
+              <p className="text-md md:text-md">
+                <strong className="font-extrabold text-custom-blue">Reliability: </strong> We deliver
                 as per our promise.
               </p>
             </div>

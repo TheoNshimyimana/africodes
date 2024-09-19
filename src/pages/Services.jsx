@@ -21,19 +21,19 @@ const Services = forwardRef((props, ref) => {
     <section className="bg-slate-100 pt-10">
       {/* T24 Consultancy Section */}
       <main id="services" className="pt-4" ref={ref}>
-        <h1 className=" text-custom-yellow text-3xl text-center mb-10">
+        <h1 className=" font-semibold text-custom-blue text-3xl text-center mb-10">
           Our Core Services
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 pb-14 px-5 gap-4">
           {/* T24 Training */}
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
-              <FaChalkboardTeacher className="text-4xl text-custom-green mb-5" />
+              <FaChalkboardTeacher className="text-4xl text-custom-blue mb-5" />
               <h1 className="text-custom-blue text-lg font-bold mt-2">
                 T24 Training
               </h1>
               <Link to="/training">
-                <button className="mt-6 px-4 py-1 font-bold bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 font-bold bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -48,7 +48,7 @@ const Services = forwardRef((props, ref) => {
                 CBS Implementation
               </h1>
               <Link to="/cbs_implementation">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -63,7 +63,7 @@ const Services = forwardRef((props, ref) => {
                 Data Engineering
               </h1>
               <Link to="/data_engineering">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -78,7 +78,7 @@ const Services = forwardRef((props, ref) => {
                 Project Management
               </h1>
               <Link to="/project_management">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -93,7 +93,7 @@ const Services = forwardRef((props, ref) => {
                 T24 Integration
               </h1>
               <Link to="/integration">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -108,7 +108,7 @@ const Services = forwardRef((props, ref) => {
                 Quality Insurance Services
               </h1>
               <Link to="/quality_insurance">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -123,7 +123,7 @@ const Services = forwardRef((props, ref) => {
                 Process Optimisation
               </h1>
               <Link to="/process_optimisation">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -138,7 +138,7 @@ const Services = forwardRef((props, ref) => {
                 Management Information Systems
               </h1>
               <Link to="/management_information">
-                <button className="mt-6 px-4 py-1 bg-custom-yellow text-white rounded hover:bg-custom-blue transition-colors">
+                <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">
                   Details
                 </button>
               </Link>
@@ -149,7 +149,7 @@ const Services = forwardRef((props, ref) => {
 
       {/* Products */}
       <main className="px-6 py-10" id="products">
-        <h1 className=" text-custom-yellow text-3xl text-center mb-10">
+        <h1 className="font-semibold text-custom-blue text-3xl text-center mb-10">
           Our Products
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4 gap-8">
@@ -159,9 +159,10 @@ const Services = forwardRef((props, ref) => {
               <FaNetworkWired className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">Afronet</h1>
               <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque sapiente culpa non perferendis nam. Quod quo voluptatem ducimus numquam?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam cumque sapiente culpa non perferendis nam. Quod quo
+                voluptatem ducimus numquam?
               </p>
-              
             </div>
           </div>
 
@@ -173,9 +174,10 @@ const Services = forwardRef((props, ref) => {
                 Direct Daily T24 Transactions
               </h1>
               <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum neque sapiente cumque quasi voluptate quam animi quas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ipsum neque sapiente cumque quasi voluptate quam animi
+                quas.
               </p>
-              
             </div>
           </div>
 
@@ -187,9 +189,11 @@ const Services = forwardRef((props, ref) => {
                 E-Statements Solution
               </h1>
               <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dignissimos itaque accusamus laudantium facilis temporibus! Odio ab exercitationem numquam veritatis eius? Nemo eos omnis asperiores eius dolores minima voluptate vitae?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur dignissimos itaque accusamus laudantium facilis
+                temporibus! Odio ab exercitationem numquam veritatis eius? Nemo
+                eos omnis asperiores eius dolores minima voluptate vitae?
               </p>
-            
             </div>
           </div>
 
@@ -201,10 +205,9 @@ const Services = forwardRef((props, ref) => {
                 Dormant Accounts Management
               </h1>
               <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque in iste fuga soluta aliquid!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique itaque in iste fuga soluta aliquid!
               </p>
-              
-              
             </div>
           </div>
         </div>
