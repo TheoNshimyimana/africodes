@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import LogoNav from './images/LogoNav.png'
 import GetAppointment from './pages/GetAppointment'
 
@@ -7,9 +7,17 @@ function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [showAppointmentModal, setShowAppointmentModal] = useState(false)
   const [hasShadow, setHasShadow] = useState(false)
+  const menuRef = useRef() // Reference for the mobile menu
 
   // Toggle Mobile Menu
   const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen)
+
+  // Close Mobile Menu if clicking outside
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setMobileMenuOpen(false)
+    }
+  }
 
   // Toggle Appointment Modal
   const toggleAppointmentModal = () =>
@@ -50,6 +58,18 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    // Attach event listener to handle clicks outside
+    if (isMobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+
+    // Cleanup on unmount
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [isMobileMenuOpen])
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -84,9 +104,7 @@ function Navbar() {
                 <ul key={section}>
                   <li
                     className={`${
-                      activeSection === section
-                        ? 'text-blue-700 font-bold'
-                        : ''
+                      activeSection === section ? 'text-blue-700 font-bold' : ''
                     } hover:text-blue-600 transition-colors duration-200`}
                     onClick={() => scrollToSection(section)}
                   >
@@ -115,14 +133,19 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed top-0 right-0 bg-white w-1/2 h-1/2 z-40 shadow-lg md:hidden flex flex-col items-center">
+          <div
+            ref={menuRef} // Reference for mobile menu
+            className="fixed top-0 right-0 bg-white w-1/2 h-1/2 z-40 shadow-lg md:hidden flex flex-col items-center"
+          >
             <ul className="flex flex-col items-center gap-8 mt-12">
               {['home', 'about', 'services', 'products', 'team', 'contact'].map(
                 (section) => (
                   <li
                     key={section}
                     className={`${
-                      activeSection === section ? 'text-custom-blue font-bold' : ''
+                      activeSection === section
+                        ? 'text-custom-blue font-bold'
+                        : ''
                     } hover:text-blue-600 transition-colors duration-200`}
                     onClick={() => scrollToSection(section)}
                   >

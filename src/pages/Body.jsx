@@ -1,12 +1,9 @@
 // import { useState } from 'react'
 import banner from '../images/banner.jpg'
-// import GetAppointment from './GetAppointment'
-// import Bg from '../assets/bg.jpg'
+import Bg from '../assets/bg.jpg'
+import Logo from '../assets/loggo.png'
 
 function Body() {
-
-  
-
   const scrollToServices = () => {
     const navbarHeight = document.querySelector('nav')?.offsetHeight || 0
     const element = document.getElementById('services')
@@ -21,10 +18,18 @@ function Body() {
   return (
     <>
       <section id="home">
-        <main >
-
-        </main>
-       
+        <section
+          style={{ backgroundImage: `url(${Bg})` }}
+          className="w-full h-1/2 sm:h-1/2 flex items-center justify-center p-14"
+        >
+          <div className="h-32 w-32 sm:h-52 sm:w-52 rounded-full overflow-hidden flex items-center justify-center bg-white">
+            <img
+              src={Logo}
+              alt="Logo"
+              className="h-full w-full object-contain"
+            />
+          </div>
+        </section>
 
         {/* Home Section */}
         <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
@@ -101,32 +106,43 @@ function Body() {
                 Our Values
               </h2>
               <p className="text-md md:text-md mb-4 ">
-                <strong className="font-extrabold text-custom-blue">Accountability: </strong>
+                <strong className="font-extrabold text-custom-blue">
+                  Accountability:{' '}
+                </strong>
                 We accept responsibility for our actions and make business
                 decisions based on experience and good judgment.
               </p>
               <p className="text-md md:text-md mb-4">
                 <strong className="font-extrabold text-custom-blue">
                   Customer Service Excellence:
-                 </strong>
+                </strong>
                 We are committed to satisfying customer needs and honoring the
                 commitments we make to them.
               </p>
               <p className="text-md md:text-md mb-4">
-                <strong className="font-extrabold text-custom-blue">Teamwork: </strong> We believe in
-                teamwork for efficient and effective delivery of our services.
+                <strong className="font-extrabold text-custom-blue">
+                  Teamwork:{' '}
+                </strong>{' '}
+                We believe in teamwork for efficient and effective delivery of
+                our services.
               </p>
               <p className="text-md md:text-md mb-4">
-                <strong className="font-extrabold text-custom-blue">Integrity: </strong> We act with
-                honesty and integrity, never compromising the truth.
+                <strong className="font-extrabold text-custom-blue">
+                  Integrity:{' '}
+                </strong>{' '}
+                We act with honesty and integrity, never compromising the truth.
               </p>
               <p className="text-md md:text-md mb-4">
-                <strong className="font-extrabold text-custom-blue">Respect: </strong> We give the
-                utmost respect to our stakeholders at all times.
+                <strong className="font-extrabold text-custom-blue">
+                  Respect:{' '}
+                </strong>{' '}
+                We give the utmost respect to our stakeholders at all times.
               </p>
               <p className="text-md md:text-md">
-                <strong className="font-extrabold text-custom-blue">Reliability: </strong> We deliver
-                as per our promise.
+                <strong className="font-extrabold text-custom-blue">
+                  Reliability:{' '}
+                </strong>{' '}
+                We deliver as per our promise.
               </p>
             </div>
           </div>
