@@ -115,7 +115,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed top-0 right-0 bg-white w-1/2 h-full z-40 shadow-lg md:hidden flex flex-col items-center">
+          <div className="fixed top-0 right-0 bg-white w-1/2 h-1/2 z-40 shadow-lg md:hidden flex flex-col items-center">
             <ul className="flex flex-col items-center gap-8 mt-12">
               {['home', 'about', 'services', 'products', 'team', 'contact'].map(
                 (section) => (
@@ -148,7 +148,7 @@ function Navbar() {
           onClick={toggleAppointmentModal}
         >
           <div
-            className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full h-auto relative"
+            className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full h-full relative"
             onClick={(e) => e.stopPropagation()} // Prevent closing modal on inner click
           >
             <button

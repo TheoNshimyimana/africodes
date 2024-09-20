@@ -57,7 +57,7 @@ function Body() {
             <img
               src={banner}
               alt="Banner image"
-              className="w-full h-[500px] rounded-lg object-cover"
+              className="w-full h-[500px] rounded-lg object-cover shadow-md"
             />
           </div>
         </main>
