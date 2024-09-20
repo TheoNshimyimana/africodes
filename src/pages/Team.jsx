@@ -109,7 +109,7 @@ const teamMembers = [
     social: {
       facebook: '#',
       twitter: 'https://twitter.com/willy_hirwa',
-      linkedin: 'www.linkedin.com/in/hirwa-willy',
+      linkedin: 'https://www.linkedin.com/in/hirwa-willy',
       instagram: '#',
     },
   },

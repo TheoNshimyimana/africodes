@@ -105,7 +105,7 @@ const Services = forwardRef((props, ref) => {
             <div className="text-center flex flex-col items-center">
               <AiOutlineSafety className="text-4xl text-custom-green mb-5" />
               <h1 className="text-custom-blue text-lg font-bold mt-2">
-                Quality Insurance Services
+                Quality Ansurance Services
               </h1>
               <Link to="/quality_insurance">
                 <button className="mt-6 px-4 py-1 bg-custom-blue text-white rounded hover:bg-custom-blue transition-colors">

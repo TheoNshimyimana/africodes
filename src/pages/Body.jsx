@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import banner from '../images/main-web.gif'
+import banner from '../images/banner.jpg'
 // import GetAppointment from './GetAppointment'
 // import Bg from '../assets/bg.jpg'
 
@@ -29,10 +29,10 @@ function Body() {
         {/* Home Section */}
         <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
           <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left pl-6">
-            <h1 className="text-custom-yellow  text-2xl md:text-3xl pl-4 lg:text-4xl">
+            <h1 className="text-custom-blue  text-2xl md:text-3xl pl-4 lg:text-4xl">
               Africode Consultancy Ltd
             </h1>
-            <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4">
+            <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4 font-semibold">
               Africode Consultancy specializes in ICT consultancy, advisory
               services, capacity building, and training. We simplify enterprise
               technology and offer high-quality services at affordable prices.
