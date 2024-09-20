@@ -66,14 +66,24 @@ const teamMembers = [
     name: 'Tinashe Nedziwe',
     role: 'T24 Senior Consultant',
     image: Tinashe,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: 'https://www.linkedin.com/in/tinashe-nedziwe-8577b199',
+      instagram: '#',
+    },
   },
 
   {
     name: 'Frank Manzi',
     role: 'T24 Technical Consultant',
     image: Manzi,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: 'https://www.linkedin.com/in/frank-manzi-3757b5207',
+      instagram: '#',
+    },
   },
   {
     name: 'Anotinda Mangwanda',
@@ -98,7 +108,7 @@ const teamMembers = [
     image: Willy,
     social: {
       facebook: '#',
-      twitter: '#',
+      twitter: 'https://twitter.com/willy_hirwa',
       linkedin: 'www.linkedin.com/in/hirwa-willy',
       instagram: '#',
     },
