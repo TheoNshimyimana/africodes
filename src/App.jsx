@@ -24,7 +24,7 @@ function App() {
           <Route path="/project_management" element={<ProjectManagement />} />
           <Route path="/integration" element={<Integration />} />
           <Route path="/quality_insurance" element={<QualityInsurance />} />
-          <Route path="/information_management" element={<InfoManagement />} />
+          <Route path="/management_information" element={<InfoManagement />} />
           <Route
             path="/process_optimisation"
             element={<ProcessOptimisation />}

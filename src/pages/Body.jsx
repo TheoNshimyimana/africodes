@@ -1,7 +1,7 @@
 // import { useState } from 'react'
-import banner from '../images/banner.jpg'
+import banner from '../images/main-web.gif'
 // import GetAppointment from './GetAppointment'
-import Bg from '../assets/bg.jpg'
+// import Bg from '../assets/bg.jpg'
 
 function Body() {
 
@@ -29,7 +29,7 @@ function Body() {
         {/* Home Section */}
         <main className="flex flex-col md:flex-row bg-slate-100 justify-between md:space-y-0 md:space-x-4 pt-2 gap-5 py-0 z-0 scroll-animate bg-cover bg-center">
           <div className="flex-1 sm:mt-0 lg:mt-12 md:text-left pl-6">
-            <h1 className="text-custom-blue  text-2xl md:text-3xl pl-4 lg:text-4xl">
+            <h1 className="text-custom-yellow  text-2xl md:text-3xl pl-4 lg:text-4xl">
               Africode Consultancy Ltd
             </h1>
             <p className="mt-4 leading-10 text-slate-600 text-base md:text-lg text-justify mx-4 sm:mx-4">
@@ -47,7 +47,7 @@ function Body() {
             <div className="text-center md:text-left mt-10">
               <button
                 onClick={scrollToServices}
-                className="flex items-center ml-3 justify-center text-white bg-custom-blue font-semibold py-2 px-4 rounded-md cursor-pointer transition-colors duration-300 hover:bg-yellow-600"
+                className="flex items-center ml-3 justify-center text-white bg-custom-yellow font-semibold py-2 px-4 rounded-md cursor-pointer transition-colors duration-300 hover:bg-yellow-600"
               >
                 What We Offer
               </button>
@@ -57,7 +57,7 @@ function Body() {
             <img
               src={banner}
               alt="Banner image"
-              className="w-full h-[500px] rounded-lg shadow-md"
+              className="w-full h-[500px] rounded-lg object-cover"
             />
           </div>
         </main>
@@ -105,7 +105,7 @@ function Body() {
                 We accept responsibility for our actions and make business
                 decisions based on experience and good judgment.
               </p>
-              <p className="text-sm md:text-md mb-4">
+              <p className="text-md md:text-md mb-4">
                 <strong className="font-extrabold text-custom-blue">
                   Customer Service Excellence:
                  </strong>
@@ -117,7 +117,7 @@ function Body() {
                 teamwork for efficient and effective delivery of our services.
               </p>
               <p className="text-md md:text-md mb-4">
-                <strong className="font-bold text-custom-blue">Integrity: </strong> We act with
+                <strong className="font-extrabold text-custom-blue">Integrity: </strong> We act with
                 honesty and integrity, never compromising the truth.
               </p>
               <p className="text-md md:text-md mb-4">

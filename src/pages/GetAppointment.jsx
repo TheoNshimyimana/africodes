@@ -56,7 +56,7 @@ const GetAppointment = () => {
   return (
     <section className="px-4 py-4 lg:py-5 bg-gray-50">
       <div className="flex justify-between items-center mb-3">
-        <h1 className="text-xl lg:text-2xl text-custom-blue">
+        <h1 className="text-xl font-semibold lg:text-2xl text-custom-blue">
           Get an Appointment
         </h1>
       </div>
@@ -193,7 +193,7 @@ const GetAppointment = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2 bg-custom-yellow text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition duration-300"
+            className="w-full py-2 bg-custom-blue text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition duration-300"
           >
             {loading ? <Loader /> : 'Schedule Appointment'}
           </button>

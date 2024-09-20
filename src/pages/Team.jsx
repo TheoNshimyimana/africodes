@@ -79,7 +79,12 @@ const teamMembers = [
     name: 'Anotinda Mangwanda',
     role: 'T24 Technical Consultant',
     image: Anotinda,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: 'https://rw.linkedin.com/in/anotida-mangwanda-04bb8b2b8',
+      instagram: '#',
+    },
   },
   {
     name: 'Edgar Tibeihaho',
@@ -91,7 +96,12 @@ const teamMembers = [
     name: 'Munezero Hirwa Willy Christel',
     role: 'T24 Technical Consultant',
     image: Willy,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: 'www.linkedin.com/in/hirwa-willy',
+      instagram: '#',
+    },
   },
   {
     name: 'Innocent Ndahiriwe',
@@ -197,7 +207,7 @@ const TeamSection = () => {
                   )}
                 </div>
                 <div className=" w-full text-center flex-1 pt-4 bg-slate-100 ">
-                  <h2 className="font-bold text-blue-700 text-sm sm:text-lg md:text-lg mb-2">
+                  <h2 className="font-bold text-custom-blue text-sm sm:text-lg md:text-lg mb-2">
                     {member.name}
                   </h2>
                   <p className="text-black font-semibold text-sm  mb-4">

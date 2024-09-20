@@ -46,11 +46,7 @@ const Customers = () => {
           alt="Customer Logo"
           className="w-44 h-24 object-cover mx-auto"
         />
-        <img
-          src={Tat}
-          alt="Customer Logo"
-          className="w-44 h-24 object-cover mx-auto"
-        />
+
         <img
           src={Ncb}
           alt="Customer Logo"
@@ -86,9 +82,15 @@ const Customers = () => {
       <h1 className="font-semibold text-custom-blue text-3xl mt-10 text-center pt-10 mb-10">
         Our Partners
       </h1>
-      <div className="flex-wrap grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 mt-4 gap-6">
+      <div className="flex-wrap grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 mt-4 gap-6">
         <img
           src={Nerma}
+          alt="Partner Logo"
+          className="w-60 h-32 object-cover mx-auto"
+        />
+
+        <img
+          src={E_solution}
           alt="Partner Logo"
           className="w-60 h-32 object-cover mx-auto"
         />
@@ -97,10 +99,11 @@ const Customers = () => {
           alt="Partner Logo"
           className="w-60 h-32 object-cover mx-auto"
         />
+
         <img
-          src={E_solution}
-          alt="Partner Logo"
-          className="w-60 h-32 object-cover mx-auto"
+          src={Tat}
+          alt="Customer Logo"
+          className="w-44 h-24 object-cover mx-auto"
         />
 
         <img
