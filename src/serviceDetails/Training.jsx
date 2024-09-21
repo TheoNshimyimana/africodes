@@ -25,7 +25,7 @@ const Training = () => {
             leverage T24's capabilities to streamline banking operations.
           </p>
           <button
-            onClick={() => navigate(-1)} // Navigates back to the previous page
+            onClick={() => navigate(-1)} 
             className="text-white hover:bg-yellow-600 bg-custom-yellow rounded-lg px-4 py-2 shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center"
           >
             &larr; Back to Services

@@ -40,14 +40,14 @@ function Contact() {
       if (res.success) {
         setSuccess('Your message has been sent successfully!')
         formRef.current.reset()
-        setTimeout(() => setSuccess(null), 5000) // Hide success message after 5 seconds
+        setTimeout(() => setSuccess(null), 5000) 
       } else {
         setError('Failed to send your message. Please try again.')
-        setTimeout(() => setError(null), 5000) // Hide error message after 5 seconds
+        setTimeout(() => setError(null), 5000) 
       }
     } catch (err) {
       setError('Something went wrong. Please try again later.')
-      setTimeout(() => setError(null), 5000) // Hide error message after 5 seconds
+      setTimeout(() => setError(null), 5000) 
     } finally {
       setLoading(false)
     }
@@ -146,7 +146,7 @@ function Contact() {
             </div>
           </form>
 
-          {/* Success/Error Messages */}
+          
           {success && (
             <div className="flex items-center font bo gap-3 mt-4 font-semibold p-4 bg-green-100 text-green-700 rounded-md">
               <IoMdCheckmarkCircleOutline className="text-2xl" />

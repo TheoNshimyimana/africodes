@@ -41,7 +41,7 @@ function Navbar() {
         if (element) {
           const rect = element.getBoundingClientRect()
           const windowHeight = window.innerHeight
-          const offset = 200 // Buffer to make section highlight before reaching middle
+          const offset = 200 
 
           if (rect.top >= 0 && rect.top < windowHeight - offset) {
             currentSection = section

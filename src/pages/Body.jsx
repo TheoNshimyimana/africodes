@@ -107,7 +107,7 @@ function Body() {
               </h2>
               <p className="text-md md:text-md mb-4 ">
                 <strong className="font-extrabold text-custom-blue">
-                  Accountability:{' '}
+                  Accountability:
                 </strong>
                 We accept responsibility for our actions and make business
                 decisions based on experience and good judgment.
@@ -121,27 +121,27 @@ function Body() {
               </p>
               <p className="text-md md:text-md mb-4">
                 <strong className="font-extrabold text-custom-blue">
-                  Teamwork:{' '}
-                </strong>{' '}
+                  Teamwork:
+                </strong>
                 We believe in teamwork for efficient and effective delivery of
                 our services.
               </p>
               <p className="text-md md:text-md mb-4">
                 <strong className="font-extrabold text-custom-blue">
-                  Integrity:{' '}
-                </strong>{' '}
+                  Integrity:
+                </strong>
                 We act with honesty and integrity, never compromising the truth.
               </p>
               <p className="text-md md:text-md mb-4">
                 <strong className="font-extrabold text-custom-blue">
-                  Respect:{' '}
-                </strong>{' '}
+                  Respect:
+                </strong>
                 We give the utmost respect to our stakeholders at all times.
               </p>
               <p className="text-md md:text-md">
                 <strong className="font-extrabold text-custom-blue">
-                  Reliability:{' '}
-                </strong>{' '}
+                  Reliability:
+                </strong>
                 We deliver as per our promise.
               </p>
             </div>
@@ -151,7 +151,7 @@ function Body() {
 
       {/* Services Section */}
       <section id="services" className="px-4 md:px-8 bg-slate-100">
-        {/* Your services content here */}
+        
       </section>
     </>
   )

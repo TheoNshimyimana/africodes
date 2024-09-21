@@ -32,15 +32,15 @@ const GetAppointment = () => {
 
       if (res.success) {
         setSuccess('Your message has been sent successfully!')
-        setTimeout(() => setSuccess(null), 5000) // Clear success message after 5 seconds
+        setTimeout(() => setSuccess(null), 5000) 
         formRef.current.reset()
       } else {
         setError('Failed to send your message. Please try again.')
-        setTimeout(() => setError(null), 5000) // Clear error message after 5 seconds
+        setTimeout(() => setError(null), 5000) 
       }
     } catch (error) {
       setError('Something went wrong. Please try again later.')
-      setTimeout(() => setError(null), 5000) // Clear error message after 5 seconds
+      setTimeout(() => setError(null), 5000) 
     } finally {
       setLoading(false)
     }
@@ -68,7 +68,7 @@ const GetAppointment = () => {
           onSubmit={onSubmit}
           className="flex flex-col space-y-3"
         >
-          {/* Flexbox for label and input with reduced spacing */}
+          
           <div className="flex items-center space-x-2">
             <label
               htmlFor="name"
@@ -131,7 +131,7 @@ const GetAppointment = () => {
               name="time"
               className="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
-              onChange={handleTimeChange} // Handle time change
+              onChange={handleTimeChange} 
             />
           </div>
 

@@ -1,5 +1,5 @@
-// Services.jsx
-import React, { forwardRef } from 'react'
+
+import  { forwardRef } from 'react'
 import {
   FaNetworkWired,
   FaStream,
@@ -19,13 +19,13 @@ import { Link } from 'react-router-dom'
 const Services = forwardRef((props, ref) => {
   return (
     <section className="bg-slate-100 pt-10">
-      {/* T24 Consultancy Section */}
+     
       <main id="services" className="pt-4" ref={ref}>
         <h1 className=" font-semibold text-custom-blue text-3xl text-center mb-10">
           Our Core Services
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 pb-14 px-5 gap-4">
-          {/* T24 Training */}
+          
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <FaChalkboardTeacher className="text-4xl text-custom-blue mb-5" />
@@ -40,7 +40,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* CBS Implementation */}
+         
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <FaTools className="text-4xl text-custom-green mb-5" />
@@ -55,7 +55,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Data Engineering */}
+          
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <FaDatabase className="text-4xl text-custom-green mb-5" />
@@ -70,7 +70,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Project Management */}
+          
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <FaProjectDiagram className="text-4xl text-custom-green mb-5" />
@@ -85,7 +85,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* T24 Integration */}
+       
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <AiOutlineApi className="text-4xl text-custom-green mb-5" />
@@ -100,7 +100,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Quality Insurance Services */}
+         
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <AiOutlineSafety className="text-4xl text-custom-green mb-5" />
@@ -115,7 +115,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Process Optimisation */}
+          
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <MdSettings className="text-4xl text-custom-green mb-5" />
@@ -130,7 +130,7 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Management Information Systems */}
+          
           <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <MdBusinessCenter className="text-4xl text-custom-green mb-5" />
@@ -148,15 +148,15 @@ const Services = forwardRef((props, ref) => {
       </main>
 
       {/* Products */}
-      <main className="px-6 py-10" id="products">
+      <main className="px-6 py-16" id="products">
         <h1 className="font-semibold text-custom-blue text-3xl text-center mb-10">
           Our Products
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4 gap-8">
-          {/* Product Card 1 - Afronet */}
-          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
+          
+          <div className="relative shadow py-28 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
-              <FaNetworkWired className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
+              <FaNetworkWired className="text-4xl text-custom-blue mb-8 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">Afronet</h1>
               <p className="mt-4 mb-6 text-gray-600 leading-8 text-left">
                 
@@ -164,10 +164,10 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Product Card 2 - Direct Daily T24 Transactions */}
-          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
+          
+          <div className="relative shadow py-28 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
-              <FaStream className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
+              <FaStream className="text-4xl text-custom-blue mb-8 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">
                 Direct Daily T24 Transactions
               </h1>
@@ -177,10 +177,10 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Product Card 3 - E-Statements Solution */}
-          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
+          
+          <div className="relative shadow py-28 rounded-xl px-6 bg-white pb-12">
             <div className="text-center flex flex-col items-center">
-              <FaFileInvoice className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
+              <FaFileInvoice className="text-4xl text-custom-blue mb-8 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">
                 E-Statements Solution
               </h1>
@@ -190,10 +190,10 @@ const Services = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Product Card 4 - Dormant Accounts Management */}
-          <div className="relative shadow py-10 rounded-xl px-6 bg-white pb-12">
+          
+          <div className="relative shadow py-28 pb-28 rounded-xl px-6 bg-white ">
             <div className="text-center flex flex-col items-center">
-              <FaUserClock className="text-3xl text-custom-blue mb-5 group-hover:text-white transition-colors duration-300" />
+              <FaUserClock className="text-4xl text-custom-blue mb-8 group-hover:text-white transition-colors duration-300" />
               <h1 className="text-custom-blue text-lg font-bold">
                 Dormant Accounts Management
               </h1>
