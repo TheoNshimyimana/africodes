@@ -59,7 +59,12 @@ const teamMembers = [
     name: 'Kenny Munyaneza Roger',
     role: 'T24 Technical Consultant',
     image: Kenny,
-    social: { facebook: '#', twitter: '#', linkedin: '#', instagram: '#' },
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: 'https://www.linkedin.com/in/munyaneza-kenny-roger',
+      instagram: '#',
+    },
   },
 
   {
