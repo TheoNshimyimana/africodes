@@ -62,7 +62,7 @@ const teamMembers = [
     social: {
       facebook: '#',
       twitter: '#',
-      linkedin: 'https://www.linkedin.com/in/munyaneza-kenny-roger',
+      linkedin: 'https://www.linkedin.com/in/munyaneza-kenny-rogerl',
       instagram: '#',
     },
   },

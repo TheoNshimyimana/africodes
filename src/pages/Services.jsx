@@ -26,7 +26,7 @@ const Services = forwardRef((props, ref) => {
         </h1>
         <div className="flex-wrap grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 pb-14 px-5 gap-4">
           
-          <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
+          <div className="shadow  py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <FaChalkboardTeacher className="text-4xl text-custom-blue mb-5" />
               <h1 className="text-custom-blue text-lg font-bold mt-2">
@@ -131,7 +131,7 @@ const Services = forwardRef((props, ref) => {
           </div>
 
           
-          <div className="shadow py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
+          <div className="shadow px-4 py-6 bg-white rounded-lg hover:shadow-xl transition-shadow">
             <div className="text-center flex flex-col items-center">
               <MdBusinessCenter className="text-4xl text-custom-green mb-5" />
               <h1 className="text-custom-blue text-lg font-bold mt-2">
