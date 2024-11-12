@@ -6,7 +6,7 @@ import LoaderBlank from './pages/LoaderBlank.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-{/*     <App /> */}
-    <LoaderBlank />
+    <App />
+{/*     <LoaderBlank /> */}
   </StrictMode>,
 )
